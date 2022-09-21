@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính đơn giản</title>
+    <style>
+        button {
+            background-color: white;
+            width: 240px;
+            height: 180px;
+            border: 5px solid #000;
+            text-align: center;
+        }
+
+        input {
+            color: blue;
+            width: 50px;
+            height: 20px;
+        }
+        #window {
+            width: 200px;
+            height: 30px;
+        }
+        /* table 
+        {
+            width: 200px;
+            height: 200px;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <button>
+        <table>
+            <tr>
+                <td colspan="4"><input type="text" id="window"></td>
+            </tr>
+                <tr>
+                    <td><input type="button" onclick="nhap(this.value)" value="1"></td>
+                    <td><input type="button" onclick="nhap(this.value)" value="2"></td>
+                    <td><input type="button" onclick="nhap(this.value)" value="3"></td>
+                    <td><input type="button" onclick="nhap(this.value)" value="+"></td>
+                </tr>
+
+            
+            <tr>
+                <td ><input type="button" onclick="nhap(this.value)" value="4"></td>
+                <td><input type="button" onclick="nhap(this.value)" value="5"></td>
+                <td><input type="button" onclick="nhap(this.value)" value="6"></td>
+                <td><input type="button" onclick="nhap(this.value)" value="-"></td>
+            </tr>
+            <tr>
+                <td><input type="button" onclick="nhap(this.value)" value="7"></td>
+                <td><input type="button" onclick="nhap(this.value)" value="8"></td>
+                <td><input type="button" onclick="nhap(this.value)" value="9"></td>
+                <td><input type="button" onclick="nhap(this.value)" value="*"></td>
+            </tr>
+            <tr>
+                <td><input type="button" onclick="xoa()" value="C"></td>
+                <td><input type="button" onclick="nhap(this.value)" value="0"></td>
+                <td><input type="button" onclick="bang()" value="="></td>
+                <td><input type="button" onclick="nhap(this.value)" value="/"></td>
+            </tr>
+            <!-- <tr>
+            <td><input type="button" onclick="xoaKyTu()" value="x"></td>
+        </tr> -->
+        </table>
+
+    </button>
+
+    <script src="calculate.js"></script>
+</body>
+
+</html>
