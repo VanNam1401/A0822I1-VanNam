@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<p id="ketQua"></p>
+<script>
+
+  // thực hiện ra màn hình các số từ 0 đến 10;
+
+  // for (let i=0;i<=10;i++){
+  //     document.write(i +"<br>");
+  // }
+  // dùng while
+  // let j=0;
+  // while (j<=10){
+  //     document.write(j +"<br>");
+  //     j++;
+  // }
+  // không biết trước số lần lặp
+  // nhập vào 1 số n, nếu n<=0 yêu cầu nhập lại
+  // nếu n>0 thì in ra số vừa nhập
+  // let n =prompt("nhập một số");
+  // while (n<=0){
+  //     n=prompt("yêu cầu nhập lại");
+  // }
+  // let n;
+  // do{
+  //     n =prompt("nhập một số");
+  // }while (n<=0)
+  //
+  // //  for (;n<=0;){
+  // //      n= prompt("nhập lại");
+  // //  }
+  // // vòng lặp vô hạn
+  // //  for(;;){
+  // //      n= prompt("nhập lại");
+  // //  }
+  // alert("số bạn vừa nhập là "+ n);
+
+  // in ra một dãy số từ 0=>10 ( nhưng không in ra số chia hết cho 3)
+  // for (let i=0; i<=10;i++){
+  //     if (i%3==0){
+  //         continue;
+  //     }
+  //     document.write(i+ "<br>")
+  // }
+  // for (let i=0; i<=10;i++){
+  //     if (i%3==0){
+  //         continue;
+  //     }
+  //     document.write(i+ "<br>")
+  // }
+  // hiện thị ra số chia hết cho 7 đầu tiên tron dãy số tự nhiên;
+  // let j =1;
+  // while (true){
+  //     if (j%7==0){
+  //         document.write("số đầu tiên chia hết cho 7 là "+ j);
+  //         break;
+  //     }
+  //     j++;
+  // }
+
+  // vòn lặp lồng nhau: in ra 1 bảng
+
+    let data = '<table border="1">';
+  for (let i = 0; i < 20; i++) {
+    data += '<tr>';
+    for (let j = 0; j < 20; j++) {
+      data += ' <td style="width: 20px;height: 20px"></td>';
+    }
+    data += '</tr>';
+  }
+  data += '</table>';
+
+    document.getElementById("ketQua").innerHTML = data;
+</script>
+
+</body>
+</html>
