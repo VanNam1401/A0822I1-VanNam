@@ -1,3 +1,5 @@
+// noinspection HtmlDeprecatedAttribute
+
 function ex1() {
     let num = +prompt("Enter a number: ");
     let total = 0;
@@ -11,7 +13,7 @@ function ex1() {
 function ex2() {
     let i = 1;
     while(i < 100) {
-        document.write("<hr width =" + i + ">");
+        document.write(`<hr width =${i}>`);
         i++;
     }
 }

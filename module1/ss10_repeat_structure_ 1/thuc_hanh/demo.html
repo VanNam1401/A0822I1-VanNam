@@ -41,12 +41,13 @@
   // alert("số bạn vừa nhập là "+ n);
 
   // in ra một dãy số từ 0=>10 ( nhưng không in ra số chia hết cho 3)
-  // for (let i=0; i<=10;i++){
-  //     if (i%3==0){
-  //         continue;
-  //     }
-  //     document.write(i+ "<br>")
-  // }
+  for (let i=0; i<=10;i++){
+      if (i%3==0){
+        document.write(i+ "<br>")
+          continue;
+      }
+
+  }
   // for (let i=0; i<=10;i++){
   //     if (i%3==0){
   //         continue;
@@ -65,17 +66,17 @@
 
   // vòn lặp lồng nhau: in ra 1 bảng
 
-    let data = '<table border="1">';
-  for (let i = 0; i < 20; i++) {
-    data += '<tr>';
-    for (let j = 0; j < 20; j++) {
-      data += ' <td style="width: 20px;height: 20px"></td>';
-    }
-    data += '</tr>';
-  }
-  data += '</table>';
-
-    document.getElementById("ketQua").innerHTML = data;
+  //   let data = '<table border="1">';
+  // for (let i = 0; i < 20; i++) {
+  //   data += '<tr>';
+  //   for (let j = 0; j < 20; j++) {
+  //     data += ' <td style="width: 20px;height: 20px"></td>';
+  //   }
+  //   data += '</tr>';
+  // }
+  // data += '</table>';
+  //
+  //   document.getElementById("ketQua").innerHTML = data;
 </script>
 
 </body>
