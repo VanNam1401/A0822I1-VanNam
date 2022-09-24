@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liệt kê các số nguyên tố</title>
+</head>
+<body>
+<script>
+    let number = Number(prompt("Số các nguyên tố cần hiển thị: "));
+    let count = 0;
+    let n = 2;
+    while (count < number) {
+        let temp = 1;
+        for (let i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i === 0) {
+                temp = 0;
+            }
+        }
+        if (temp === 1) {
+            document.write(n + " ");
+            count++;
+        }
+        n++;
+    }
+
+</script>
+</body>
+</html>
