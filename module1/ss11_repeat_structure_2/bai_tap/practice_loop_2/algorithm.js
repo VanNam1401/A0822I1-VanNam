@@ -23,6 +23,66 @@ function ex2() {
         document.write(value);
     }
 }
-function ex3() {
 
+function ex3() {
+    let n = +prompt("Nhập thứ tự từ 1 -> 4: ");
+
+    let value = +prompt("Nhập số dòng: ")
+    switch (n) {
+        case 1:
+            for (let i = 1; i <= value; i++) {
+                for (let j = 1; j <= i; j++) {
+                    document.write("*");
+                }
+                document.write('<br>');
+            }
+            break;
+        case 2:
+            for (let i = 1; i <= value; i++) {
+                for (let j = value; j >= i; j--) {
+                    document.write("*");
+                }
+                document.write('<br>');
+            }
+            break;
+        case 3:
+            for (let i = 0; i < value; i++) {
+                for (let j = value; j > i; j--) {
+                    document.write("\xa0\xa0");
+                }
+                for (let k = 0; k <= i; k++) {
+                    document.write("*");
+                }
+                document.write('<br>');
+            }
+            break;
+        case 4:
+            for (let i = 0; i < value; i++) {
+                for (let j = 0; j < i; j++) {
+                    document.write("\xa0\xa0");
+                }
+                for (let k = i; k < value; k++) {
+                    document.write("*");
+                }
+                document.write('<br>');
+            }
+            break;
+    }
+}
+
+function ex4() {
+
+    let width = +prompt("Nhap chieu rong:");
+    let height = +prompt("Nhap chieu dai:");
+
+    for (let i = 1; i <= width; i++) {
+        for (let k = 1; k <= height; k++) {
+            if (i === 1 || k === width || k === height) {
+                document.write("*");
+            } else {
+                document.write("\xa0\xa0");
+            }
+        }
+        document.write('<br>');
+    }
 }
