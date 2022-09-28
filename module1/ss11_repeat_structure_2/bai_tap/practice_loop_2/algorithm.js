@@ -76,9 +76,11 @@ function ex4() {
     let height = +prompt("Nhap chieu dai:");
 
     for (let i = 1; i <= width; i++) {
-        for (let k = 1; k <= height; k++) {
-            if (i === 1 || k === width || k === height) {
+        for (let j = 1; j <= height; j++) {
+            if (i === 1 || i === width || j === 1 || j === height) {
                 document.write("*");
+            // } else if (j === 1) {
+            //     document.write("*");
             } else {
                 document.write("\xa0\xa0");
             }
