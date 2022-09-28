@@ -79,12 +79,23 @@ function ex4() {
         for (let j = 1; j <= height; j++) {
             if (i === 1 || i === width || j === 1 || j === height) {
                 document.write("*");
-            // } else if (j === 1) {
-            //     document.write("*");
+                // } else if (j === 1) {
+                //     document.write("*");
             } else {
                 document.write("\xa0\xa0");
             }
         }
         document.write('<br>');
     }
+}
+
+function ex5() {
+    let money = +prompt("Nhập số tiền ban đầu");
+    let month = +prompt("Nhập số tháng cho vay");
+    let interestRate = 0.07;
+    //let sumMoney = 0;
+    for (let i = 1; i <= month; i++) {
+        money = money + money * interestRate;
+    }
+    document.write(money + '');
 }
