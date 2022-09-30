@@ -1,3 +1,4 @@
+//In dãy Finonaci
 function ex1() {
     let a = 1, b = 0, temp;
     let num = +prompt("Nhập số lượng fibonacci:");
@@ -9,7 +10,7 @@ function ex1() {
         num--;
     }
 }
-
+//Tính giai thừa của một số nguyên dương
 function ex2() {
     let n = +prompt("Nhap n:");
     let value = 1;
@@ -23,7 +24,7 @@ function ex2() {
         document.write(value);
     }
 }
-
+//In tam giác vuông. Các góc vuông nằm ở các vị trí khác nhau
 function ex3() {
     let n = +prompt("Nhập thứ tự từ 1 -> 4: ");
 
@@ -69,7 +70,7 @@ function ex3() {
             break;
     }
 }
-
+//In hình chữ nhật
 function ex4() {
     let width, height;
 do {
@@ -89,7 +90,7 @@ do {
         document.write('<br>');
     }
 }
-
+//Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lại con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.
 function ex5() {
     let money = +prompt("Nhập số tiền ban đầu");
     let month = +prompt("Nhập số tháng cho vay");
