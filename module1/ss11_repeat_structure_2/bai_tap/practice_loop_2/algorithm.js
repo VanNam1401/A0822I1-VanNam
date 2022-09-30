@@ -71,10 +71,11 @@ function ex3() {
 }
 
 function ex4() {
-
-    let width = +prompt("Nhap chieu rong:");
-    let height = +prompt("Nhap chieu dai:");
-
+    let width, height;
+do {
+     width = Number(prompt("Nhap chieu rong:"));
+     height = Number(prompt("Nhap chieu dai:"));
+} while (width < 0 || height < 0);
     for (let i = 1; i <= width; i++) {
         for (let j = 1; j <= height; j++) {
             if (i === 1 || i === width || j === 1 || j === height) {
