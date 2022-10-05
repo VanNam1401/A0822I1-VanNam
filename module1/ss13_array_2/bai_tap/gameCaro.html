@@ -16,13 +16,12 @@
     }
     let checkPlayer1 = true;
     display();
-
     function display() {
         let data = '<table border="1">';
         for (let i = 0; i < 10; i++) {
             data += '<tr>';
             for (let j = 0; j < 10; j++) {
-                data += '<td  onclick="play(' + i + ',' + j + ')" style="width: 30px;height:30px">' + arr[i][j] + '</td>';
+                data += '<th  onclick="play(' + i + ',' + j + ')" style="width: 30px;height:30px">' + arr[i][j] + '</th>';
             }
             data += '</tr>'
         }
