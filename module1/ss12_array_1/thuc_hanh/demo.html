@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // c1: khai báo mảng
+    let numberArray =[10,20,30,40];
+    // let strArray = new Array("nokia","samsung","iphone","Bphone");
+    // alert("độ dài của mảng strArray :" +strArray.length);
+    // let person = Array("Chánh",38,true,"Đà Năng","0938305879");
+    // // truy cập vào phần tử có vị trí index=3 để hiện thị.
+    // console.log("địa của "+ person[0]+ "là"+ person[3]);
+    // // truy cập vào để thay đổi giá trị cho phần tử
+    //  person[3]="Kon Tum";
+    // console.log("địa của "+ person[0]+ "là"+ person[3]);
+    //
+    // // sử dụng for để duyệt mảng và in ra các phần tử có trong mảng
+    //
+    // for (let i = 0; i <strArray.length ; i++) {
+    //    console.log("phần tử thứ " +i+ " :"+ strArray[i]);
+    // }
+    // for (let i = strArray.length-1; i>=0 ; i--) {
+    //     console.log("phần tử thứ " +i+ " :"+ strArray[i]);
+    // }
+    // // duyệt mảng để thay đổi giá trị các phần tủ
+    // for (let i = 0; i <strArray.length ; i++) {
+    //     strArray[i]= "Dien Thoai: "+ strArray[i];
+    // }
+    //
+    // console.log(strArray);
+    // for (let i = 0; i <strArray.length ; i++) {
+    //     if (strArray[i]=="Dien Thoai: Bphone"){
+    //         strArray[i]=strArray[i] + " của VN";
+    //     }
+    // }
+    // console.log(strArray);
+    // sử dụng for of để duyệt mảng lấy giá trị của các phần tử
+    // for(let num of numberArray){
+    //     console.log(num);
+    // }
+    // sử dụng for-in để duyệt mảng
+    // => lấy ra các vị trị (chỉ số) của các phần tử
+    // for (let index in numberArray){
+    //     console.log(index);
+    // }
+    //  các phương thức có sẵn để thao thao tác với mảng
+    // thêm vào đầu mảng
+    numberArray.unshift(5,0);
+    console.log(numberArray);
+    // xoá 1 pt đầu
+    numberArray.shift();
+    console.log(numberArray);
+    numberArray.push(50);
+    console.log(numberArray);
+    // chèn phần tử 100 vào vị trị 2;
+    // numberArray.splice(2,0,100);
+    // console.log(numberArray);
+    // đảo ngược mảng
+    numberArray.reverse();
+    console.log(numberArray);
+    for (let i = 0; i <numberArray.length/2 ; i++) {
+        let temp=numberArray[i];
+        numberArray[i] =numberArray[numberArray.length-1-i];
+        numberArray[numberArray.length-1-i]=temp;
+    }
+    console.log(numberArray);
+    // mảng 2 chiều -nhập vào
+    let row = +prompt("nhập số hàng");
+    let col = +prompt("nhập số cột");
+    let arr = new Array(row);
+    for (let i = 0; i <arr.length ; i++) {
+        arr[i]= new Array(col);
+        for (let j = 0; j <arr[i].length ; j++) {
+            arr[i][j]= +prompt("nhập vào phần tử hàng : "+i + " cột :" +j);
+        }
+    }
+    // in mảng 2 chiều
+    for (let i = 0; i <arr.length ; i++) {
+        for (let j = 0; j <arr[i].length ; j++) {
+            document.write(arr[i][j])
+        }
+        document.write("<br>")
+    }
+    // tính tổng các phần tử ở cột chẵn và là phần tử lẻ
+    let sum=0;
+    for (let i = 0; i <arr.length ; i++) {
+        for (let j = 0; j <arr[i].length ; j++) {
+            if (j%2==0&&arr[i][j]%2==1){
+                sum +=arr[i][j];
+            }
+        }
+    }
+    alert("tổng là : "+sum);
+</script>
+</body>
+</html>
