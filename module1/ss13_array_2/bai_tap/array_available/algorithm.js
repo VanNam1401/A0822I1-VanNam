@@ -1,5 +1,8 @@
 function practice1() {
-    let num;
+    let arr = Array ("Red", "Green", "White", "Black");
+    console.log(arr.toString());
+    console.log(arr.join());
+    console.log(arr.join('+'));
 }
 
 function practice2() {
@@ -30,7 +33,6 @@ function practice3() {
         } else {
             ketQua.push(str[i]);
         }
-
     }
     console.log(ketQua.join(''))
 }

@@ -5,8 +5,8 @@ function practice1() {
         width = +prompt("Nhap chieu rong:");
         height = +prompt("Nhap chieu dai:");
     } while (width < 0 || height < 0);
-    for (let i = 1; i <= width; i++) {
-        for (let j = 1; j <= height; j++) {
+    for (let i = 1; i <= width; i++) { // dòng
+        for (let j = 1; j <= height; j++) { // cột
             if (i === 1 || j === height || j === 1 || i === width) {
                 document.write("*");
             } else {

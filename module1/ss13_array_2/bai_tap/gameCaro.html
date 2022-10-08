@@ -2,27 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Game Caro</title>
 </head>
 <body>
 <p id="display"></p>
 <script>
-    // let row = +prompt("Nhap so cot: ");
-    // let col = +prompt("Nhap so hang: ");
-    let arr = new Array(10);
+
+    //khởi tạo giá trị cho mảng.
+    let row = +prompt("Nhap so cot: ");
+    let col = +prompt("Nhap so hang: ");
+    let arr = new Array(row);
     for (let i = 0; i < arr.length; i++) {
-        arr[i] = new Array(10);
+        arr[i] = new Array(col);
         for (let j = 0; j < arr[i].length; j++) {
             arr[i][j] = "";
         }
     }
     let checkPlayer1 = true;
+
+    //gọi hàm hiển thị
     display();
+
+    //hàm hiển thị, tạo bảng.
     function display() {
         let data = '<table border="1">';
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < arr.length; i++) {
             data += '<tr>';
-            for (let j = 0; j < 10; j++) {
+            for (let j = 0; j < arr[i].length; j++) {
                 data += '<th  onclick="play(' + i + ',' + j + ')" style="width: 30px;height:30px">' + arr[i][j] + '</th>';
             }
             data += '</tr>'
@@ -31,6 +37,7 @@
         document.getElementById("display").innerHTML = data;
     }
 
+    //thực hiện và kiểm tra người chơi
     function play(i, j) {
         if (checkPlayer1 && isNotData(i, j)) {
             arr[i][j] = "X";
@@ -39,10 +46,10 @@
             arr[i][j] = "O";
             checkPlayer1 = true;
         }
-
         display();
     }
 
+    //kiểm tra nội dung ô được click
     function isNotData(i, j) {
         if (arr[i][j] == "") {
             return true;
