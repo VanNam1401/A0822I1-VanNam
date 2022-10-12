@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>de quy</title>
+</head>
+<body>
+<script>
+    let number = prompt("Nhap so:")
+
+    function giathua(number) {
+        if (number === 0) {
+            return 1;
+        } else {
+            return number * giathua(number - 1);
+        }
+    }
+
+    document.write(giathua(number));
+</script>
+</body>
+</html>

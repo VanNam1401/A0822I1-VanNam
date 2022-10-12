@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // định nghĩa hàm không có tham số
+    // function showMessageHello() {
+    //     alert("HelloWorld")
+    // }
+    // // gọi hàm
+    // showMessageHello();
+    // // hàm có tham số
+    // function showMessage(mess) {
+    //   alert("Xin chào :"+ mess);
+    // }
+    // let m ="Đà nẵng";
+    // showMessage(m);
+    // showMessage("A08");
+    // showMessage("CodeGym");
+    // showMessage("Việt Nam");
+    // biến toàn cục
+    // let s1 = 0;
+    // function sum() {
+    //     let a = 3;
+    //     let b = 4;
+    //     // biến cục bộ
+    //     let s = a + b;
+    //     s1 = a + b;
+    //     // alert(s);
+    // }
+    // alert(s1);
+    // sum();
+    // alert(s1);
+    //
+
+    // function kiểm tra môt số có phải là số nguyên tô hay không?
+    // function isPrime2(n) {
+    //     if (n < 2) {
+    //         return false;
+    //     } else {
+    //         for (let i = 2; i < n; i++) {
+    //             if (n % i == 0) {
+    //                return false;
+    //             }
+    //         }
+    //     }
+    //     return  true;
+    // }
+    // function isPrime3(n) {
+    //     if (n < 2) {
+    //         alert("không phải là số nguyên tố");
+    //     } else {
+    //         let check=true;
+    //         for (let i = 2; i < n; i++) {
+    //             if (n % i == 0) {
+    //                check=false;
+    //                break;
+    //             }
+    //         }
+    //         if (check){
+    //             alert("là số nguyên tố");
+    //         }else {
+    //             alert("không phải là số nguyên tố")
+    //         }
+    //     }
+    // }
+    // let a = +prompt("nhập vào môt số");
+    // kiểm tra số a có phải là số nguyên hay không?
+
+    // let arr =[2,4,6,5,7];
+    // // đếm số lượng các số nguyên tố có trong mảng.
+    // let count =0;
+    // for (let i = 0; i <arr.length ; i++) {
+    //     if (isPrime3(arr[i])){
+    //         count++
+    //     }
+    // }
+    // alert("số lượng số nguyên tố có trong mảng :" + count)
+
+    function change1(a) {
+        a++;
+        alert("a trong hàm " + a);
+    }
+
+    let x = 10;
+    change1(x);
+    alert("x ngoài hàm  :" + x);
+
+    function change2(arr) {
+        let temp = arr[0]
+        arr[0] = arr[1];
+        arr[1] = temp;
+        alert("trong function :" + arr)
+    }
+
+    let array = [10, 20];
+    change2(array);
+    alert("ngoài function :" + array)
+</script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập tạo và sử dụng hàm 01</title>
+</head>
+<body>
+<button onclick="addNumbers()">Bài 4</button>
+<button onclick="star()">Bài 5</button>
+<script>
+    // //hàm alertMessage() hiển thị hộp thoại chứa chuỗi "Xin Chào"
+    // function alertMessage() {
+    //     alert("Xin chào");
+    // }
+    // //tăng giá trị đối số lên 1 và trả lại cho lời gọi hàm
+    // let number = +prompt("Nhập giá trị:");
+    // function increaseValue(number) {
+    //     number++;
+    //     alert(number +'');
+    // }
+    // //min max
+    // let number1 = prompt("Nhập số thứ 1:");
+    // let number2 = prompt("Nhập số thứ 2:");
+    // function minMax(number1, number2) {
+    //     if (number1 > number2) {
+    //         document.write("Giá trị " + number1 + " lớn nhất.")
+    //     } else {
+    //         document.write(number1 + number2);
+    //     }
+    // }
+    //// thêm hàm alert
+    // function addNumbers() {
+    //     firstNum = 4;
+    //     secondNum = 8;
+    //     result = firstNum + secondNum;
+    //     return result;
+    // }
+    // result = 0;
+    // alert(result);
+    // result = addNumbers();
+    // alert(result);
+
+    //xét mảng
+    let str = prompt("Nhập tên ngôi sao: ");
+    function star(str) {
+        let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+        let index = -1;
+        for (let i = 0; i < arr1.length; i++) {
+            if (str === arr1[i]) {
+                index = i;
+            }
+        }
+        if (index !== -1) {
+            document.write(arr2[index]);
+        } else {
+            document.write("Khong tim thay gia tri.");
+        }
+    }
+</script>
+</body>
+</html>
