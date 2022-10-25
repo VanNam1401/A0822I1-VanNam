@@ -1,63 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Game Caro</title>
 </head>
+
 <body>
-<p id="display"></p>
-<script>
+    <p id="display"></p>
+    <script>
 
-    //khởi tạo giá trị cho mảng.
-    let row = +prompt("Nhap so cot: ");
-    let col = +prompt("Nhap so hang: ");
-    let arr = new Array(row);
-    for (let i = 0; i < arr.length; i++) {
-        arr[i] = new Array(col);
-        for (let j = 0; j < arr[i].length; j++) {
-            arr[i][j] = "";
-        }
-    }
-    let checkPlayer1 = true;
-
-    //gọi hàm hiển thị
-    display();
-
-    //hàm hiển thị, tạo bảng.
-    function display() {
-        let data = '<table border="1">';
+        //khởi tạo giá trị cho mảng.
+        let row = +prompt("Nhap so cot: ");
+        let col = +prompt("Nhap so hang: ");
+        let arr = new Array(row);
         for (let i = 0; i < arr.length; i++) {
-            data += '<tr>';
+            arr[i] = new Array(col);
             for (let j = 0; j < arr[i].length; j++) {
-                data += '<th  onclick="play(' + i + ',' + j + ')" style="width: 30px;height:30px">' + arr[i][j] + '</th>';
+                arr[i][j] = "";
             }
-            data += '</tr>'
         }
-        data += '</table>';
-        document.getElementById("display").innerHTML = data;
-    }
+        let checkPlayer1 = true;
 
-    //thực hiện và kiểm tra người chơi
-    function play(i, j) {
-        if (checkPlayer1 && isNotData(i, j)) {
-            arr[i][j] = "X";
-            checkPlayer1 = false;
-        } else if (!checkPlayer1 && isNotData(i, j)) {
-            arr[i][j] = "O";
-            checkPlayer1 = true;
-        }
+        //gọi hàm hiển thị
         display();
-    }
 
-    //kiểm tra nội dung ô được click
-    function isNotData(i, j) {
-        if (arr[i][j] == "") {
-            return true;
-        } else {
-            alert("ô này đánh rồi bạn ơi!!");
+        //hàm hiển thị, tạo bảng.
+        function display() {
+            let data = '<table border="1">';
+            for (let i = 0; i < arr.length; i++) {
+                data += '<tr>';
+                for (let j = 0; j < arr[i].length; j++) {
+                    data += '<th  onclick="play(' + i + ',' + j + ')" style="width: 30px;height:30px">' + arr[i][j] + '</th>';
+                }
+                data += '</tr>'
+            }
+            data += '</table>';
+            document.getElementById("display").innerHTML = data;
         }
-        return false;
-    }
-</script>
+
+        //thực hiện và kiểm tra người chơi
+        function play(i, j) {
+            if (checkPlayer1 && isNotData(i, j)) {
+                arr[i][j] = "X";
+                checkPlayer1 = false;
+            } else if (!checkPlayer1 && isNotData(i, j)) {
+                arr[i][j] = "O";
+                checkPlayer1 = true;
+            }
+            display();
+        }
+
+        //kiểm tra nội dung ô được click
+        function isNotData(i, j) {
+            if (arr[i][j] == "") {
+                return true;
+            } else {
+                alert("ô này đánh rồi bạn ơi!!");
+            }
+            return false;
+        }
+    </script>
 </body>
+
 </html>

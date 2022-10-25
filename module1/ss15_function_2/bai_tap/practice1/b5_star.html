@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng</title>
+</head>
+<body>
+<script>
+  //xét mảng
+  let str = prompt("Nhập tên ngôi sao: ");
+  function star(str) {
+    let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let index = -1;
+    for (let i = 0; i < arr1.length; i++) {
+      if (str === arr1[i]) {
+        index = i;
+      }
+    }
+    if (index !== -1) {
+      document.write(arr2[index]);
+    } else {
+      document.write("Khong tim thay gia tri.");
+    }
+  }
+  star(str);
+</script>
+</body>
+</html>

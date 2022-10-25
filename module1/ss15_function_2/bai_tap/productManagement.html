@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<input type="text" id="sanPham" placeholder="Nhập tên sản phẩm">
+<input type="button" id="btn-add" value="Thêm mới" onclick="themMoi()"><br>
+<!--<input type="button" id="btn-update" style="display: none" value="Cập nhât" onclick="update()"><br>-->
+<span>Số lượng sản phẩm:  </span><span id="soLuong"></span>
+<div id="hienThi"></div>
+
+<script>
+  let danhSachSP =["Nokia", "Iphone", "Sam sung"]
+  hienThi(danhSachSP);
+  // let indexUpdate=-1;
+  function themMoi() {
+    let sanPhamMoi = document.getElementById("sanPham").value;
+    if (sanPhamMoi!=""){
+      danhSachSP.push(sanPhamMoi);
+    }else {
+      alert("Yêu cầu nhập sản phẩm");
+    }
+
+      hienThi(danhSachSP);
+    document.getElementById("sanPham").value="";
+  }
+  function hienThi(danhSach) {
+        let tableString ='<table border="1">\n' +
+                '    <tr>\n' +
+                '        <th>STT</th>\n' +
+                '        <th>Tên</th>\n' +
+                '        <th>Sửa</th>\n' +
+                '        <th>Xoá</th>\n' +
+                '    </tr>';
+    for (let i = 0; i <danhSach.length ; i++) {
+      tableString +='  <tr>\n' +
+              '        <td>'+(i+1)+'</td>\n' +
+              '        <td>'+danhSach[i]+'</td>\n' +
+              '        <td><input type="button" onclick="suaSanPham('+i+')" value="Sửa"></td>\n' +
+              '        <td><input type="button" onclick="xoaSanPham('+i+')" value="Xoá"></td>\n' +
+              '    </tr>'
+    }
+        tableString +='</table>'
+    document.getElementById("hienThi").innerHTML=tableString;
+    document.getElementById("soLuong").innerHTML=danhSach.length;
+  }
+  function xoaSanPham(index) {
+    let xacNhanXoa = confirm("Bạn có muốn xoá sản phẩm "+ danhSachSP[index] +"???")
+    if (xacNhanXoa){
+      danhSachSP.splice(index,1);
+    }
+    hienThi(danhSachSP);
+  }
+  function suaSanPham(index) {
+    let editSanPham = prompt("Hãy nhập tên sản phẩm mới",danhSachSP[index]);
+    danhSachSP[index] = editSanPham;
+    hienThi(danhSachSP);
+  }
+  // function suaSanPham2(index) {
+  //     indexUpdate=index;
+  //     document.getElementById("sanPham").value=danhSachSP[index];
+  //     document.getElementById("btn-add").style.display='none';
+  //     document.getElementById("btn-update").style.display='block';
+  //
+  // }
+  // function update() {
+  //     let editSanPham =document.getElementById("sanPham").value
+  //     danhSachSP[indexUpdate] = editSanPham;
+  //     document.getElementById("btn-add").style.display='block';
+  //     document.getElementById("btn-update").style.display='none';
+  //     hienThi(danhSachSP);
+  // }
+</script>
+</body>
+</html>
