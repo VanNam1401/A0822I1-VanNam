@@ -6,20 +6,35 @@
 </head>
 <body>
 <script>
-  let person = {};
-  let person = {
-    name: ['Bob', 'Smith'],
-    age: 32,
-    gender: 'male',
-    interests: ['music', 'skiing'],
-    bio: function () {
-      alert(this.name[0] + ' ' + this.name[1] + ' is ' + this.age + ' '+ this.interests[0] + ' and ' + this.interests[1] + '.');
-    },
-    greeting: function () {
-      alert("Hi! I\m" + this.name[0] + '.');
+    let person = {
+        name: ['Bob', 'Smith'],
+        age: 32,
+        gender: 'male',
+        interests: ['music', 'skiing'],
+        bio: function () {
+            alert(this.name[0] + ' ' + this.name[1] + ' is ' + this.age + ' ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+        },
+        greeting: function () {
+            alert("Hi! I\m" + this.name[0] + '.');
+        }
+    };
+    let myDataName = nameInput.value;
+    let myDataValue = nameValue.value;
+    let myDataName = 'height';
+    let myDataValue = '1.75m';
+    person[myDataName] = myDataValue;
+    // person.bio();
+    // let objectName = {
+    //     member1Name: member1Value,
+    //     member2Name: member2Value,
+    //     member3Name: member3Value,
+    // }
+    person['eyes'] = 'hazel';
+    person.farewell = function () {
+        alert("Bye everybody!");
     }
-  };
-  person.bio();
+    person['eyes'];
+    person.farewell();
 </script>
 </body>
 </html>

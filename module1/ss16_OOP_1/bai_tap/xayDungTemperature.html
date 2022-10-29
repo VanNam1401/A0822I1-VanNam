@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+<script>
+  class Temperature {
+    constructor(doC) {
+      this.doC = doC;
+    }
+    convertCtoF() {
+      return this.doC * 9/5 + 32;
+    }
+    convertCtoK() {
+      return this.doC + 273.15;
+    }
+  }
+  let doC;
+  do {
+    doC = +prompt("Nhap nhiet do C: ");
+  } while (doC < -273);
+  let value = new Temperature(doC);
+
+  alert(value.convertCtoF() + " do F");
+  alert(value.convertCtoK() + " do K");
+</script>
+</body>
+</html>

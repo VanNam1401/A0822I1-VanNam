@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let value = prompt("Nhap");
+    let arr = ["khong", "mot", "hai", "ba", "bon", "nam", "sau", "bay", "tam", "chin"];
+    let print = "bat dau: ";
+    let index = 0;
+
+    for (let i = 0; i <= arr.length; i++) {
+        if (value[index] == i) {
+            print += arr[i] + " ";
+
+        }
+        ++index;
+        // i = 0;
+    }
+    alert(print);
+</script>
+</body>
+</html>

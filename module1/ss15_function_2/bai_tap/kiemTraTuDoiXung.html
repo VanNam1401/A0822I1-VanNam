@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sử dụng phương thức đệ quy kiểm tra tư đối xứng</title>
+</head>
+<body>
+<script>
+    let value = prompt("Nhap chuoi ki tư: ");
+    let i = 0;
+
+    function isPalindrome(value, s, i) {
+        if (s === 0) {
+            return 1;
+        } else if (value[i] !== value[s]) {
+            return 0;
+        } else {
+            return isPalindrome(value, ++i, s - i);
+        }
+
+    }
+
+    if (isPalindrome(value, i, value.length - 1) === 1) {
+        document.write(value + " la chuoi doi xung");
+    } else {
+        document.write(value + " khong phai chuoi doi xung");
+    }
+
+</script>
+</body>
+</html>

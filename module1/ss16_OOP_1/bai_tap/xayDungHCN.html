@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hình chữ nhật</title>
+</head>
+<body>
+<canvas id="rectangle" width="500" height="600"></canvas>
+<script>
+    class Rectangle {
+        constructor(height, width) {
+            this.height = height;
+            this.width = width;
+        }
+
+        getHeight() {
+            return this.height;
+        }
+
+        getWidth() {
+            return this.width;
+        }
+
+        setHeight(height) {
+            this.height = height;
+        }
+
+        setWidth(width) {
+            this.width = width;
+        }
+
+        area() {
+            return this.height * this.width;
+        }
+
+        perimeter() {
+            return (this.width + this.height) * 2;
+        }
+
+        canvas() {
+            let c = document.getElementById("rectangle");
+            let ctx = c.getContext("2d");
+            ctx.fillStyle = '#fa4b2a';
+            ctx.fillRect(10, 40, this.width, this.height);
+        }
+    }
+
+    let value = new Rectangle(160, 140);
+    value.setHeight(200);
+    value.setWidth(160);
+    value.canvas();
+    alert(value.area());
+    alert(value.perimeter());
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hiện đổi chỗ hai số</title>
+</head>
+<body>
+<script>
+  let number1 = prompt("Nhap so thu 1");
+  let number2 = prompt("Nhap so thu 2");
+  function changNumber() {
+    let temp = number1;
+    number1 = number2;
+    number2 = temp;
+  }
+  changNumber(number1, number2);
+  document.write(number1 + " " + number2);
+</script>
+</body>
+</html>

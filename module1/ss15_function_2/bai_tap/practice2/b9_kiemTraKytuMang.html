@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra ki tu trong mang</title>
+</head>
+<body>
+<script>
+  let arr = [1, 'a', 2, 'b', 'd', 5, 6, "as", 2];
+  let character = prompt("Nhap ki tu can tim:");
+  let count = 0;
+  function checkCharacter() {
+    for (let i = 0; i < arr.length; i++) {
+      if (character == arr[i]) {
+        count++;
+      }
+    }
+    // return count;
+
+  }
+  checkCharacter(arr, count);
+  // document.write(count + '');
+  if (count !== 0) {
+    document.write(count + '');
+  } else {
+    document.write("-1");
+  }
+</script>
+</body>
+</html>
