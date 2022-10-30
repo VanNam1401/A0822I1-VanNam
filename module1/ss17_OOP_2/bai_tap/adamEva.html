@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mô phỏng câu chuyện Adam và Eva</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(weight) {
+            this.weight = weight;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        setWeight(weight) {
+            this.weight = weight;
+        }
+        decrease() {
+            if (this.weight > 0) {
+                return this.weight--;
+            }
+            else {
+                return this.weight = 0;
+            }
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weightHuman, weightApple) {
+            this.name = name;
+            this.gender = gender;
+            this.weightHuman = weightHuman;
+            this.weightApple = weightApple;
+            this.say = " ";
+        }
+        getWeightApple(apple) {
+            return this.weightApple = apple;
+        }
+        getName() {
+            return this.name;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        getWeight() {
+            return this.weightPeople;
+        }
+
+        setWeight(weight) {
+            this.weightPeople = weight;
+        }
+
+        sayHuman(speech) {
+            this.say += speech;
+            alert(this.say);
+        }
+
+        eatApple(apple) {
+            if (this.weightApple.getWeight() > 0) {
+                this.weightApple.decrease();
+                this.weightHuman++;
+                document.write("Sau khi an " + this.weightHuman + ", " + " khoi luong tao con lai: " + this.weightApple.getWeight());
+            } else {
+                document.write("khong an duoc tao");
+            }
+        }
+    }
+    let apple = new Apple(10);
+    let adam = new Human("Adam", "Nam", 50);
+    let eva = new Human("Eva", "Nu", 45);
+    adam.getWeightApple(apple);
+    adam.eatApple(apple);
+    eva.sayHuman("Hello Adam");
+</script>
+</body>
+</html>

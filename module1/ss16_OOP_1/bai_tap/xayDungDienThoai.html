@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Xây dựng lớp mô tả điện thoại.</title>
+</head>
+<body>
+<script>
+    class Mobile {
+        constructor(pin, status,
+                    // mobile
+        ) {
+            this.pin = pin;
+            this.status = status;
+            // this.mobile = mobile;
+            this.draftingMessage = ""; // tin nhan soan thao
+            this.messageComes = []; //tin nhan den
+            this.messageSent = []; // tin nhan da gui
+        }
+
+        // setMobile(mobile) {
+        //     this.mobile = mobile;
+        // }
+        setDraftingMessage(message) {
+            this.draftingMessage = message;
+        }
+
+        getDraftingMessage() {
+            return this.draftingMessage;
+        }
+
+        checkStatus(status) {
+            if (status) {
+                document.write("Dien thoai dang bat");
+                this.pin--;
+            } else {
+                document.write("Dien thoai dang tat");
+            }
+        }
+
+        writeMessage(message, phone) {
+            if (this.pin > 0) {
+                // this.draftingMessage = prompt("Nhap tin nhan: ");
+                // this.messageSent.push(this.draftingMessage);
+                // this.mobile.messageComes.push(this.draftingMessage);
+                phone.setDraftingMessage(message);
+                this.messageComes.push(phone.getDraftingMessage());
+                this.messageSent.push(phone.getDraftingMessage());
+                this.pin--;
+            } else {
+                alert("Het pin roi");
+            }
+        }
+
+        seeMessageCome() {
+            let message = "";
+            for (let m of this.messageComes) {
+                message += m;
+                message += "\n";
+            }
+            alert(message);
+        }
+
+        charge() {
+            if (this.pin == 100) {
+                document.write("Dien thoai da day");
+            } else {
+                document.write("Dien thoai dang sac " + this.pin++);
+            }
+        }
+    }
+
+    let iphone = new Mobile(100, true);
+    let android = new Mobile(100, true);
+    // iphone.setMobile(android);
+    // android.setMobile(iphone);
+    iphone.writeMessage("hello", android);
+    android.seeMessageCome();
+</script>
+</body>
+</html>
