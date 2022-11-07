@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Số phần tử cần kiểm tra ");
+    let array = Array();
+    let result = [];
+    for (let i = 0; i < a; i++) {
+        array[i] = +prompt("Nhập số cần kiểm tra thứ " + (i + 1));
+    }
+    for (let i = 0; i <array.length; i++) {
+        if (isPrime(array[i])){
+            result.push(array[i]);
+        }
+    }
+    function isPrime(n)
+    {
+        if (n < 2)
+            return false;
+        for (let i = 2; i <= Math.sqrt(n); i++)
+        {
+            if (n % i === 0)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    for(let i = 0; i < result.length - 1; i++) {
+        for (let j = i + 1; j <= result.length; j++) {
+            if (result[i] > result[j]) {
+                let temp = result[i];
+                result[i] = result[j];
+                result[j] = temp;
+            }
+        }
+    }
+    for (let i = 0; i < result.length; i++) {
+        document.write(result[i] + " ");
+    }
+</script>
+</body>
+</html>

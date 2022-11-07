@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let sum = 0;
+    let row = +prompt("nhập vào số hàng");
+    let col = +prompt("nhập vào số cột");
+    for (let i = 0; i < row; i++) {
+        arr[i] = new Array(col);
+        for (let j = 0; j < col; j++) {
+            arr[i][j] = +prompt("nhập vào phần tử thứ: " + i + "-" + j);
+        }
+    }
+    for (let i = 0; i < row; i++) {
+        for (let j = 0; j < col; j++) {
+            document.write(arr[i][j]);
+        }
+        document.write("<br>");
+    }
+    for (let i = 0; i < row; i++) {
+        for (let j = 0; j < col; j++) {
+            if (arr[i][j] % 2 === 0) {
+                sum += arr[i][j];
+            }
+        }
+    }
+    document.write(sum + ' ');
+</script>
+</body>
+</html>

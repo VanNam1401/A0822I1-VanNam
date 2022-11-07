@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrB = [7, 2, 5, 3, 5, 3];
+    let arrA = [7, 2, 5, 4, 6, 3, 5, 3];
+    // let arr = [];
+    // function check(value) {
+    //   for (let i = 0; i < arrA.length; i++) {
+    //     if (value === arrA[i]) {
+    //       return true;
+    //     }
+    //   }
+    //   return false;
+    // }
+    // function display() {
+    //   for (let i = 0; i < arrB.length; i++) {
+    //     if (check(arrB[i])) {
+    //       continue;
+    //     } else {
+    //         arr.push(arrB[i]);
+    //     }
+    //   }
+    // }
+    // display();
+    // console.log(arr);
+    function test(arrA, arrB) {
+        for (let i = 0; i < arrA.length; i++) {
+            let j;
+            for (j = 0; j < arrB.length; j++) {
+                if (arrA[i] === arrB[j]) {
+                    break;
+                }
+            }
+            // console.log(j);
+            if (j === arrB.length) {
+                document.write(arrA[i] + " ");
+            }
+        }
+    }
+
+    test(arrA, arrB);
+
+</script>
+</body>
+</html>

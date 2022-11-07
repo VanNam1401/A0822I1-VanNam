@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dem so lan nhap</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập vào đây số lượng phần tử trong mảng");
+    let array = [];
+    let count = 1;
+    let display = "";
+    for (let i = 0; i < n; i++) {
+        array[i] = prompt("Nhập vào phần tử thứ " + (i + 1));
+    }
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j < array.length; j++) {
+            if (array[i] === array[j] && i !== j) {
+                count++;
+                array.splice(j, 1);
+                --j;
+            }
+        }
+        display += array[i] + " :" + count + "<br>";
+        count = 1;
+    }
+    document.write(display);
+</script>
+</body>
+</html>
