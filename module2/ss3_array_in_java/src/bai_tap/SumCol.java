@@ -2,7 +2,7 @@ package bai_tap;
 
 import java.util.Scanner;
 
-public class MaxInArray2 {
+public class SumCol {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int row = scanner.nextInt();
@@ -13,18 +13,19 @@ public class MaxInArray2 {
                 array[i][j] = scanner.nextInt();
             }
         }
-        int indexRow = 0;
-        int indexCol = 0;
-        int max = array[0][0];
+        System.out.println("List array: ");
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
-                if (array[i][j] > max) {
-                    max = array[i][j];
-                    indexRow = i;
-                    indexCol = j;
-                }
+                System.out.print(array[i][j] + "\t");
             }
+            System.out.println();
         }
-        System.out.println("Giá trị lơn nhất trong mảng: " + max + " tại vị trí " + indexRow + " - " + indexCol);
+        System.out.println("Nhập cột cần tính giá trị: ");
+        int value = scanner.nextInt();
+        int sumValue = 0;
+        for (int i = 0; i < row; i++) {
+            sumValue += array[i][value - 1];
+        }
+        System.out.println("Tổng giá trị cột " + value + " là: " + sumValue);
     }
 }
