@@ -24,8 +24,9 @@ public class SinhVienThiDo {
         int count = 0;
         System.out.print("List of mark: ");
         for (int k : array) {
-            System.out.print(k);
-            System.out.print("\t");
+            String res = String.format("%-5s",k);
+            System.out.printf(res);
+//            System.out.printf(k + "\t");
             if (k >= 5 && k <= 10) {
                 count++;
             }
