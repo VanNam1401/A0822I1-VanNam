@@ -1,5 +1,8 @@
 package bai_tap;
 
+import bai_tap.moveablepoint.MovablePoint;
+import bai_tap.moveablepoint.Point;
+
 public class Tester {
     public static void main(String[] args) {
         Point unknownPoint = new Point(20, 30);

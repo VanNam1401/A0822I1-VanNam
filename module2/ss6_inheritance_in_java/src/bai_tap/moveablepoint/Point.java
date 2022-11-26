@@ -1,4 +1,4 @@
-package bai_tap;
+package bai_tap.moveablepoint;
 
 public class Point {
     private float x = 0.0f;

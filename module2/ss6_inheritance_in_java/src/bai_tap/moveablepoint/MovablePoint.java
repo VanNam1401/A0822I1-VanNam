@@ -1,4 +1,4 @@
-package bai_tap;
+package bai_tap.moveablepoint;
 
 public class MovablePoint extends Point {
     private float xSpeed = 0.0f;
