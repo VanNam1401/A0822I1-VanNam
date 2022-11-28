@@ -15,5 +15,7 @@ public class Test {
         String str = scanner.next();
         Triangle triangle = new Triangle(str, true, side1, side2, side3);
         System.out.println(triangle.toString());
+//        Triangle triangle1 = new Shape();
+        Shape shape = new Triangle();
     }
 }
