@@ -8,6 +8,10 @@ public abstract class Shape {
         y = _y;
     }
 
+    public Shape() {
+
+    }
+
     abstract public void draw();
 
     abstract public void erase();
