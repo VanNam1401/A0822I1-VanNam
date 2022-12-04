@@ -8,6 +8,7 @@ public class FuramaController {
         System.out.print("Chọn dịch vụ: ");
         return Integer.parseInt(scanner.nextLine());
     }
+
     private void executionFunction() {
         switch (chooseFunction()) {
             case 1:
@@ -22,22 +23,30 @@ public class FuramaController {
                 break;
             case 3:
                 System.out.println("Facility Management: ");
+                FacilityController facilityController = new FacilityController();
+                facilityController.displayMainMenu();
                 break;
             case 4:
                 System.out.println("Booking Management: ");
+                BookingController bookingController = new BookingController();
+                bookingController.displayMainMenu();
                 break;
             case 5:
                 System.out.println("Promotion Management: ");
+                PromotionController promotionController = new PromotionController();
+                promotionController.displayMainMenu();
                 break;
             case 6:
                 System.out.println("Exit.");
                 System.exit(0);
             default:
-                while(chooseFunction() <= 0 || chooseFunction() > 6) {
-                   displayMainMenu();
-                };
+                while (chooseFunction() <= 0 || chooseFunction() > 6) {
+                    displayMainMenu();
+                }
+                ;
         }
     }
+
     public void displayMainMenu() {
         do {
             System.out.println("Dịch vụ của Resort: " +
