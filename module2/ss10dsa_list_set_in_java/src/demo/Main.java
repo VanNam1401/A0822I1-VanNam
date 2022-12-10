@@ -4,12 +4,13 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-//        ArrayList<Integer> arrayList = new ArrayList<>();
+        ArrayList<Integer> arrayList = new ArrayList<>();
 //        arrayList.add(2);
 //        arrayList.add(1);
 //        for (Integer e : arrayList) {
 //            System.out.println(e);
 //        }
+
 //        ArrayList<Student> studentList = new ArrayList<>();
 //        studentList.add(new Student(1,"chanh","QN"));
 //        studentList.add(new Student(2,"chanh2","QN"));
@@ -38,9 +39,9 @@ public class Main {
 //        for (Student s: studentTreeSet) {
 //            System.out.println(s);
 //        }
-        Student student1 = new Student(1,"chanh","DN");
-        Student student2 = new Student(1,"chanh","DN");
-        System.out.println(student1.equals(student2));
+//        Student student1 = new Student(1,"chanh","DN");
+//        Student student2 = new Student(1,"chanh","DN");
+//        System.out.println(student1.equals(student2));
     }
 
 }
