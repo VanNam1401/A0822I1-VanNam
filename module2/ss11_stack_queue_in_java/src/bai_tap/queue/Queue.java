@@ -14,6 +14,6 @@ public class Queue {
             this.front = this.rear = null;
             return;
         }
-        
+
     }
 }
