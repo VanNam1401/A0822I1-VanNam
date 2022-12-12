@@ -1,8 +1,8 @@
 package bai_tap.queue;
 
 public class Node {
-    private int data;
-    private Node link;
+    public int data;
+    public Node link;
 
     public Node(int data) {
         this.data = data;
