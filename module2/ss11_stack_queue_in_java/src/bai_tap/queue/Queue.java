@@ -2,7 +2,7 @@ package bai_tap.queue;
 
 import java.util.EmptyStackException;
 
-public class Queue<T> {
+public class Queue {
     private Node front;
     private Node rear;
 
@@ -33,7 +33,7 @@ public class Queue<T> {
 
     public void displayQueue() {
         Node temp = front;
-        while(temp.link != front) {
+        while (temp.link != front) {
             System.out.println(temp.data);
             temp = temp.link;
         }
