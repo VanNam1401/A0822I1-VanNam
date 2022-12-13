@@ -22,7 +22,7 @@ public class EmployeeController {
                 break;
             case 4:
 //                System.out.println("Return main menu: ");
-                displayMainMenu();
+                new FuramaController().displayMainMenu();
                 break;
             default:
                 while (chooseFunction() <= 0 || chooseFunction() > 4) {

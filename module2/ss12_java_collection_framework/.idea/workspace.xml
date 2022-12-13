@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f140fca8-23ba-434e-8ca9-c90fd8d0491b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ss11_stack_queue_in_java/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ss11_stack_queue_in_java/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ss11_stack_queue_in_java/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ss11_stack_queue_in_java/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ss11_stack_queue_in_java/src/demo/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ss11_stack_queue_in_java/src/demo/MyClassGeneric.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ss11_stack_queue_in_java/ss11_stack_queue_in_java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DemoMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss12_java_collection_framework.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ss12_java_collection_framework/DemoMap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ss12_java_collection_framework/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ss12_java_collection_framework/thuc_hanh/prc1/TestMap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_tap/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_tap/ProductManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_tap/TestProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thuc_hanh/prc1/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thuc_hanh/prc1/TestMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thuc_hanh/prc2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thuc_hanh/prc2/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thuc_hanh/prc3/AgeComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thuc_hanh/prc3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thuc_hanh/prc3/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FuramaResort/src/controllers/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FuramaResort/src/controllers/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +54,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -57,6 +65,68 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+  </component>
+  <component name="RunManager" selected="Application.TestProduct">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thuc_hanh.prc2.Main" />
+      <module name="ss12_java_collection_framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thuc_hanh.prc2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thuc_hanh.prc1.Test" />
+      <module name="ss12_java_collection_framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thuc_hanh.prc1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestProduct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_tap.TestProduct" />
+      <module name="ss12_java_collection_framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_tap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="thuc_hanh.prc3.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thuc_hanh.prc3.Main" />
+      <module name="ss12_java_collection_framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thuc_hanh.prc3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestProduct" />
+        <item itemvalue="Application.thuc_hanh.prc3.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -67,6 +137,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670687012284</updated>
       <workItem from="1670687013690" duration="256000" />
+      <workItem from="1670847915250" duration="16313000" />
     </task>
     <servers />
   </component>
