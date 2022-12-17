@@ -6,12 +6,13 @@ import java.util.List;
 public class Product
         implements
         Comparable<Product>
-//        , Cloneable
 //        Comparator<Product>
 {
     private int id;
     private String name;
     private double price;
+
+    public static boolean isDESC;
 
     public Product(int id, String name, double price) {
         this.id = id;
@@ -43,8 +44,7 @@ public class Product
         this.price = price;
     }
 
-
-//    @Override
+    //    @Override
 //    protected Object clone() throws CloneNotSupportedException {
 //        return super.clone();
 //    }
@@ -64,6 +64,6 @@ public class Product
 
     @Override
     public int compareTo(Product o) {
-        return (int) (this.getPrice() - o.getPrice());
+        return isDESC? (int) (this.getPrice() - o.getPrice()) : (int)(o.getPrice() - price);
     }
 }

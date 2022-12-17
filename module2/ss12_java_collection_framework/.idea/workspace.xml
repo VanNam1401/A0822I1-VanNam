@@ -5,21 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f140fca8-23ba-434e-8ca9-c90fd8d0491b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/ss12_java_collection_framework/DemoMap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ss12_java_collection_framework/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ss12_java_collection_framework/thuc_hanh/prc1/TestMap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_tap/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_tap/ProductManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_tap/TestProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thuc_hanh/prc1/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thuc_hanh/prc1/TestMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thuc_hanh/prc2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thuc_hanh/prc2/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thuc_hanh/prc3/AgeComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thuc_hanh/prc3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thuc_hanh/prc3/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FuramaResort/src/controllers/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FuramaResort/src/controllers/EmployeeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ss12_java_collection_framework/bai_tap/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ss12_java_collection_framework/bai_tap/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ss12_java_collection_framework/bai_tap/ProductManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ss12_java_collection_framework/bai_tap/ProductManager$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ss12_java_collection_framework/bai_tap/ProductManager$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ss12_java_collection_framework/bai_tap/ProductManager$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ss12_java_collection_framework/bai_tap/ProductManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ss12_java_collection_framework/bai_tap/ProductManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ss12_java_collection_framework/bai_tap/TestProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ss12_java_collection_framework/bai_tap/TestProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bai_tap/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_tap/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bai_tap/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_tap/ProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bai_tap/TestProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_tap/TestProduct.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,20 +41,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -137,7 +131,10 @@
       <option name="presentableId" value="Default" />
       <updated>1670687012284</updated>
       <workItem from="1670687013690" duration="256000" />
-      <workItem from="1670847915250" duration="16313000" />
+      <workItem from="1670847915250" duration="21559000" />
+      <workItem from="1671014867374" duration="5458000" />
+      <workItem from="1671021171887" duration="424000" />
+      <workItem from="1671082311870" duration="564000" />
     </task>
     <servers />
   </component>

@@ -7,7 +7,7 @@ public class TestProduct {
     private static Scanner scanner = new Scanner(System.in);
     private static ProductManager productManager = new ProductManager();
 
-    public static void main(String[] args) {
+    private static void model() {
         while (true) {
             System.out.print("Quản lý sản phẩm: ");
             System.out.print("\n1. Thêm sản phẩm." + "\n2. Sửa thông tin sản phẩm" + "\n3. Xóa sản phầm theo id." + "\n4. Hiển thị danh sách sản phẩm." + "\n5. Tìm kiếm sản phầm theo tên." + "\n6. Sắp xếp sản phẩm." + "\n7. Thoát");
@@ -39,21 +39,22 @@ public class TestProduct {
     }
 
     private static void addProduct() {
-//        while (true) {
-        System.out.print("Nhập mã sản phẩm: ");
-        int id = Integer.parseInt(scanner.nextLine());
-        System.out.print("Nhập loại sản phẩm: ");
-        String name = scanner.nextLine();
-        System.out.print("Nhập giá sản phẩm: ");
-        double price = Double.parseDouble(scanner.nextLine());
-        Product product = new Product(id, name, price);
-        productManager.addProduct(product);
-//            System.out.print("Bạn có muốn thêm sản phẩm không Y/N: ");
-//            char choose = scanner.nextLine().charAt(0);
-//            if (choose == 'N' || choose == 'n') {
-//                System.exit(0);
-//            }
-//        }
+        while (true) {
+            System.out.print("Nhập mã sản phẩm: ");
+            int id = Integer.parseInt(scanner.nextLine());
+            System.out.print("Nhập loại sản phẩm: ");
+            String name = scanner.nextLine();
+            System.out.print("Nhập giá sản phẩm: ");
+            double price = Double.parseDouble(scanner.nextLine());
+            Product product = new Product(id, name, price);
+            productManager.addProduct(product);
+            System.out.print("Bạn có muốn thêm sản phẩm không Y/N: ");
+            char choose = scanner.nextLine().charAt(0);
+            if (choose == 'N' || choose == 'n') {
+                model();
+            }
+        }
+
     }
 
     private static void updateProduct() {
@@ -94,14 +95,11 @@ public class TestProduct {
         System.out.println("Muốn sắp xếp giá " + "\n1. Tăng dần." + "\n2. Giảm dần.");
         System.out.println("Bạn muốn??? ");
         int choose = Integer.parseInt(scanner.nextLine());
-        switch (choose) {
-            case 1:
-                productManager.sortProductASC();
-                break;
-            case 2:
-                productManager.sortProductDEC();
-                break;
-        }
+        productManager.sort(choose == 1);
         displayProduct();
+    }
+
+    public static void main(String[] args) {
+        model();
     }
 }

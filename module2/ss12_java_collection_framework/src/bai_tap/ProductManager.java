@@ -37,6 +37,21 @@ public class ProductManager {
         return result;
     }
 
+    public void sort(boolean isDESC) {
+//        Product.isDESC = isDESC;
+//        Collections.sort(products);
+
+        Collections.sort(products, new Comparator<Product>() {
+            @Override
+            public int compare(Product o1, Product o2) {
+                return isDESC ? (int) (o1.getPrice() - o2.getPrice()) : (int) (o2.getPrice() - o1.getPrice());
+            }
+        });
+
+    }
+
+
+    // sắp xếp tăng dần
     public void sortProductASC() {
         Collections.sort(products, new Comparator<Product>() {
             @Override
@@ -47,6 +62,7 @@ public class ProductManager {
 //        Collections.sort(products);
     }
 
+    // sắp xếp giảm dần
     public void sortProductDEC() {
         Collections.sort(products, new Comparator<Product>() {
             @Override
