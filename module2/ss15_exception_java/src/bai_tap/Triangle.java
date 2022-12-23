@@ -17,13 +17,12 @@ public class Triangle {
     }
 
     public void checkTriangle() throws IllegalTriangleException {
-        if (a > 0 && b > 0 && c > 0) {
-            if ((a + b > c) && (a + c > b) && (b + c > a)) {
-                System.out.println("Là ba cạnh của tam giác.");
+        if (a < 0 || b < 0 || c < 0) {
+            if ((a + b < c) || (a + c < b) || (b + c < a)) {
+                throw new IllegalTriangleException("Không phải ba canh tam giác");
             }
-        } else {
-            throw new IllegalTriangleException();
         }
+        System.out.println("this is triangle");
     }
 
     public static void main(String[] args) {
