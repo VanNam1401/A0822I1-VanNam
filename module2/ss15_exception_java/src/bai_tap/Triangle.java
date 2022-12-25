@@ -22,7 +22,6 @@ public class Triangle {
                 throw new IllegalTriangleException("Không phải ba canh tam giác");
             }
         }
-        System.out.println("this is triangle");
     }
 
     public static void main(String[] args) {
@@ -33,6 +32,7 @@ public class Triangle {
         Triangle triangle = new Triangle(a, b, c);
         try {
             triangle.checkTriangle();
+            System.out.println("La 3 canh tam giac");
         } catch (IllegalTriangleException exception) {
             System.out.println(exception.getMessage());
         }
