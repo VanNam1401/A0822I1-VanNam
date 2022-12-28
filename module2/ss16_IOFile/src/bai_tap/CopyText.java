@@ -24,18 +24,13 @@ public class CopyText {
     }
 
     public static void writeFile(String path, List<Integer> list) {
+        File file = new File(path);
+
         try {
-            FileWriter writer = new FileWriter(path, true);
+            FileWriter writer = new FileWriter(file);
             BufferedWriter bufferedWriter = new BufferedWriter(writer);
-//            int i = 0;
-//            while (!list.isEmpty()) {
-//                bufferedWriter.write(list.get(i));
-//                bufferedWriter.newLine();
-//                i++;
-//            }
-            for (Integer integer :
-                    list) {
-                bufferedWriter.write(integer);
+            for (Integer integer : list) {
+                bufferedWriter.write(integer.toString());
                 bufferedWriter.newLine();
             }
             bufferedWriter.close();
