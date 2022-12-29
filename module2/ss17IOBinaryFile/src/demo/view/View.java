@@ -1,6 +1,7 @@
 package demo.view;
 
-import ss9_mvc.controller.Controller;
+
+import demo.controller.Controller;
 
 public class View {
     public static void main(String[] args) {

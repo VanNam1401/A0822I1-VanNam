@@ -1,9 +1,9 @@
 package demo.service;
 
-import ss9_mvc.model.Student;
-import ss9_mvc.service.impl.IService;
 
-public interface IStudentService extends IService<Student> {
+import demo.model.Student;
+
+public interface IStudentService {
     void display();
     Student findById(int id);
     void add();

@@ -1,9 +1,10 @@
 package demo.service.impl;
 
-import ss9_mvc.common.Validate;
-import ss9_mvc.model.Student;
-import ss9_mvc.service.IStudentService;
-import ss9_mvc.util.ReadAndWrite;
+
+import demo.common.Validate;
+import demo.model.Student;
+import demo.service.IStudentService;
+import demo.util.ReadAndWrite;
 
 import java.util.*;
 
@@ -114,11 +115,6 @@ public class StudentService implements IStudentService {
 
     @Override
     public void search() {
-
-    }
-
-    @Override
-    public void create(Student student) {
 
     }
 }

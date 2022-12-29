@@ -1,7 +1,9 @@
 package demo.controller;
 
-import ss9_mvc.service.IStudentService;
-import ss9_mvc.service.impl.StudentService;
+
+
+import demo.service.IStudentService;
+import demo.service.impl.StudentService;
 
 import java.util.Scanner;
 

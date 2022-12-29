@@ -1,8 +1,6 @@
 package thuc_hanh;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +17,20 @@ public class MainText {
         }
     }
 
+    public static List<Student> readDataFromFile(String path) {
+        List<Student> students = new ArrayList<>();
+        try {
+            FileInputStream fis = new FileInputStream(path);
+            ObjectInputStream ois = new ObjectInputStream(fis);
+            students = (List<Student>) ois.readObject();
+            fis.close();
+            ois.close();
+        } catch (Exception exception) {
+            exception.printStackTrace();
+        }
+        return students;
+    }
+
     public static void main(String[] args) {
         List<Student> students = new ArrayList<>();
         students.add(new Student(1, "Vũ Kiều Anh", "Hà Nội"));
@@ -26,5 +38,11 @@ public class MainText {
         students.add(new Student(3, "Đặng Huy Hoà", "Đà Nẵng"));
         students.add(new Student(4, "Nguyễn Khánh Tùng", "Hà Nội"));
         students.add(new Student(5, "Nguyễn Khắc Nhật", "Hà Nội"));
+        writeToFile("src/thuc_hanh/Student.txt", students);
+        List<Student> studentDataFromFile = readDataFromFile("src/thuc_hanh/Student.txt");
+        for (Student student :
+                studentDataFromFile) {
+            System.out.println(student);
+        }
     }
 }
