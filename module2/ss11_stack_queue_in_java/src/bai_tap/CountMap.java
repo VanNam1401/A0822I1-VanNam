@@ -14,7 +14,6 @@ public class CountMap {
         for (String string : strings) {
             key = string;
             if (map.containsKey(key)) {
-                System.out.println(map.get(key));
                 value += map.get(key);
                 map.put(key, value);
             } else {
