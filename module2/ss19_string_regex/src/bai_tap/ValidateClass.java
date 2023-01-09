@@ -7,6 +7,5 @@ public class ValidateClass {
         String nameClass2 = "M0318G";
         System.out.println(nameClass.matches(regex));
         System.out.println(nameClass2.matches(regex));
-
     }
 }

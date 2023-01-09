@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ReadAndWrite {
-//    ghi theo ký tự
+    //    ghi theo ký tự
     public static void writeStudentListToCSV(String pathFile, List<Student> studentList, boolean append) {
         File file = new File(pathFile);
         FileWriter fileWriter = null;
@@ -28,20 +28,19 @@ public class ReadAndWrite {
     }
 
     public static void writeStudentListToCSV2(String pathFile, List<Student> studentList, boolean append) {
-       List<String> stringList = new ArrayList<>();
-        for (Student s: studentList) {
+        List<String> stringList = new ArrayList<>();
+        for (Student s : studentList) {
             stringList.add(s.getInfoToCSV());
         }
-        writeStringtListToCSV(pathFile,stringList,append);
+        write(pathFile, stringList, append);
     }
-// method dùng chung
-    private static void writeStringtListToCSV(String pathFile, List<String> stringList, boolean append) {
+
+    // method dùng chung
+    private static void write(String pathFile, List<String> stringList, boolean append) {
         File file = new File(pathFile);
-        FileWriter fileWriter = null;
-        BufferedWriter bufferedWriter = null;
         try {
-            fileWriter = new FileWriter(file, append);
-            bufferedWriter = new BufferedWriter(fileWriter);
+            FileWriter fileWriter = new FileWriter(file, append);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
             for (String s : stringList) {
                 bufferedWriter.write(s);
                 bufferedWriter.newLine();
@@ -52,7 +51,8 @@ public class ReadAndWrite {
             e.printStackTrace();
         }
     }
-// đọc theo ký tự
+
+    // đọc theo ký tự
     public static List<Student> readStudentFromCSV(String pathFile) {
         List<Student> studentList = new ArrayList<>();
         File file = new File(pathFile);
@@ -80,10 +80,10 @@ public class ReadAndWrite {
 
     public static List<Student> readStudentFromCSV2(String pathFile) {
         List<Student> studentList = new ArrayList<>();
-        List<String> stringList = readStringListFromCSV(pathFile);
+        List<String> stringList = read(pathFile);
         String[] array = null;
-        for (String s: stringList) {
-            array=s.split(",");
+        for (String s : stringList) {
+            array = s.split(",");
             Student student = new Student(Integer.parseInt(array[0]), array[1], array[2], Integer.parseInt(array[3]));
             studentList.add(student);
         }
@@ -91,56 +91,47 @@ public class ReadAndWrite {
     }
 
     // file dùng chung
-    private static List<String> readStringListFromCSV(String pathFile) {
+    private static List<String> read(String pathFile) {
         List<String> stringList = new ArrayList<>();
-        File file = new File(pathFile);
-        FileReader fileReader = null;
-        BufferedReader bufferedReader = null;
         try {
-            fileReader = new FileReader(file);
-            bufferedReader = new BufferedReader(fileReader);
-            String line = null;
-            String[] array = null;
+            File file = new File(pathFile);
+            if (!file.exists()) {
+                throw new FileNotFoundException();
+            }
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
+            String line = "";
             while ((line = bufferedReader.readLine()) != null) {
                 stringList.add(line);
             }
             bufferedReader.close();
-            fileReader.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return stringList;
     }
 
 
-
-
     // ghi một list student vào trong file theo kiểu binary
-    public static void writeStudentListObjectToCSV (String pathFile, List<Student> studentList){
+    public static void writeStudentListObjectToCSV(String pathFile, List<Student> studentList) {
         File file = new File(pathFile);
-        FileOutputStream fileOutputStream = null;
-        ObjectOutputStream objectOutputStream =null;
         try {
-            fileOutputStream = new FileOutputStream(file);
-            objectOutputStream = new ObjectOutputStream(fileOutputStream);
+            FileOutputStream fileOutputStream = new FileOutputStream(file);
+            ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
             objectOutputStream.writeObject(studentList);
         } catch (FileNotFoundException e) {
             System.out.println("Lỗi kông tìm thấy file");
-        }catch (IOException e){
+        } catch (IOException e) {
             System.out.println("Lỗi đọc file");
         }
     }
-    public static List<Student> readFileToStudentListObject(String pathFile){
+
+    public static List<Student> readFileToStudentListObject(String pathFile) {
         List<Student> studentList = new ArrayList<>();
         File file = new File(pathFile);
-        FileInputStream fileInputStream = null;
-        ObjectInputStream objectInputStream =null;
         try {
-            if (file.length()>0){
-                fileInputStream = new FileInputStream(file);
-                objectInputStream = new ObjectInputStream(fileInputStream);
+            if (file.length() > 0) {
+                FileInputStream fileInputStream = new FileInputStream(file);
+                ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
                 studentList = (List<Student>) objectInputStream.readObject();
             }
         } catch (FileNotFoundException e) {
@@ -151,6 +142,5 @@ public class ReadAndWrite {
             e.printStackTrace();
         }
         return studentList;
-
     }
 }
