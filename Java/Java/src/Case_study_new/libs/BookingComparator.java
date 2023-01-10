@@ -3,8 +3,6 @@ package Case_study_new.libs;
 import Case_study_new.models.Booking;
 
 import java.io.Serializable;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.Comparator;
 
 public class BookingComparator implements Comparator<Booking>, Serializable {
@@ -26,15 +24,3 @@ public class BookingComparator implements Comparator<Booking>, Serializable {
         return 0;
     }
 }
-
-
-//        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-//        if ((LocalDate.parse(o1.getStartDate(), formatter)).compareTo((LocalDate.parse(o2.getStartDate(), formatter))) > 0) {
-//            return 1;
-//        }else if ((LocalDate.parse(o1.getStartDate(), formatter)).compareTo((LocalDate.parse(o2.getStartDate(), formatter))) < 1){
-//            return -1;
-//        }else {
-//            return 1;
-//
-
-

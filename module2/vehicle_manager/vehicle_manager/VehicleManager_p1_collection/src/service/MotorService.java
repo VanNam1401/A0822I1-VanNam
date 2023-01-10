@@ -26,7 +26,6 @@ public class MotorService implements VehicleService<Motor>{
 
             return motors.get(i).getDriverPlate().equals(driverPlate);
         }
-
         return false;
     }
 

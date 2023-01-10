@@ -24,7 +24,6 @@ public class ManufactureService {
                 return manufacturerList.get(i);
             }
         }
-
         return null;
     }
 }

@@ -20,13 +20,8 @@ public class CarService implements VehicleService<Car>{
 
     public boolean findByDriverPlate(String driverPlate){
         for (int i = 0; i < cars.size(); i++) {
-//            if(trucks.get(i).getDriverPlate().equals(driverPlate)){
-//                return true;
-//            }
-
             return cars.get(i).getDriverPlate().equals(driverPlate);
         }
-
         return false;
     }
 

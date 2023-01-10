@@ -19,10 +19,6 @@ public class TruckService implements VehicleService<Truck>{
 
     public boolean findByDriverPlate(String driverPlate){
         for (int i = 0; i < trucks.size(); i++) {
-//            if(trucks.get(i).getDriverPlate().equals(driverPlate)){
-//                return true;
-//            }
-
             return trucks.get(i).getDriverPlate().equals(driverPlate);
         }
 
