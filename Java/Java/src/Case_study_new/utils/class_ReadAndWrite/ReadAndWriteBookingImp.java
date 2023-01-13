@@ -5,6 +5,7 @@ import Case_study_new.utils.ReadAndWriteBooking;
 
 import java.io.*;
 import java.util.Collection;
+import java.util.List;
 
 public class ReadAndWriteBookingImp implements ReadAndWriteBooking {
     @Override
@@ -44,7 +45,7 @@ public class ReadAndWriteBookingImp implements ReadAndWriteBooking {
         try {
             fileInputStream = new FileInputStream(path);
             objectInputStream = new ObjectInputStream(fileInputStream);
-            collection = (Collection<Booking>) objectInputStream.readObject();
+            collection = (List<Booking>) objectInputStream.readObject();
         }catch (IOException | ClassNotFoundException ex){
             ex.printStackTrace();
         }finally {

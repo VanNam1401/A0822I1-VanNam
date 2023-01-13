@@ -1,23 +1,18 @@
-package Case_study_new.models;
+package models;
 
-import java.io.Serializable;
-
-public class Booking implements Serializable {
+public class Booking {
     private String idBooking;
     private String startDate;
     private String endDate;
-    private Customer customer;
-    private Facility facility;
+    private int idCustomer;
+    private int facilityId;
 
-    public Booking() {
-    }
-
-    public Booking(String idBooking, String startDate, String endDate, Customer customer, Facility facility) {
+    public Booking(String idBooking, String startDate, String endDate, int idCustomer, int facilityId) {
         this.idBooking = idBooking;
         this.startDate = startDate;
         this.endDate = endDate;
-        this.customer = customer;
-        this.facility = facility;
+        this.idCustomer = idCustomer;
+        this.facilityId = facilityId;
     }
 
     public String getIdBooking() {
@@ -44,22 +39,21 @@ public class Booking implements Serializable {
         this.endDate = endDate;
     }
 
-    public Customer getCustomer() {
-        return customer;
+    public int getIdCustomer() {
+        return idCustomer;
     }
 
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
+    public void setIdCustomer(int idCustomer) {
+        this.idCustomer = idCustomer;
     }
 
-    public Facility getFacility() {
-        return facility;
+    public int getFacilityId() {
+        return facilityId;
     }
 
-    public void setFacility(Facility facility) {
-        this.facility = facility;
+    public void setFacilityId(int facilityId) {
+        this.facilityId = facilityId;
     }
-
 
     @Override
     public String toString() {
@@ -67,9 +61,8 @@ public class Booking implements Serializable {
                 "idBooking='" + idBooking + '\'' +
                 ", startDate='" + startDate + '\'' +
                 ", endDate='" + endDate + '\'' +
-                ", idCustomer=" + customer.getIdCode() +
-                ", nameService=" + facility.getNameService() +
-                ", idService=" + facility.getIdFacility() +
+                ", idCustomer=" + idCustomer +
+                ", facilityId=" + facilityId +
                 '}';
     }
 }
