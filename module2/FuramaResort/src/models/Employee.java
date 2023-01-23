@@ -3,9 +3,9 @@ package models;
 public class Employee extends Person{
     private String level;
     private String position;
-    private int salary;
+    private double salary;
 
-    public Employee(String idCode, String namePerson, String dateOfBirth, String sex, String idPerson, String phoneNumber, String emailAddress, String level, String position, int salary) {
+    public Employee(String idCode, String namePerson, String dateOfBirth, String sex, String idPerson, String phoneNumber, String emailAddress, String level, String position, double salary) {
         super(idCode, namePerson, dateOfBirth, sex, idPerson, phoneNumber, emailAddress);
         this.level = level;
         this.position = position;
@@ -34,7 +34,7 @@ public class Employee extends Person{
         this.position = position;
     }
 
-    public int getSalary() {
+    public double getSalary() {
         return salary;
     }
 
