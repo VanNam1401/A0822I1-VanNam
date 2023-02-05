@@ -24,6 +24,4 @@ public class Motor extends Vehicle{
     public String toString() {
         return String.format("%s,%s", super.toString(), wattage);
     }
-
-
 }

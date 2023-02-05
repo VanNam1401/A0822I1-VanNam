@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4ea461da-060d-4218-aa3d-54157e9cdf23" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../finish_exam/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../finish_exam/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../finish_exam/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../finish_exam/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../finish_exam/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../finish_exam/finish_exam.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../finish_exam/out/production/finish_exam/data/danhBa.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../finish_exam/out/production/finish_exam/model/DanhBa.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../finish_exam/out/production/finish_exam/service/DanhBaService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../finish_exam/out/production/finish_exam/service/Service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../finish_exam/out/production/finish_exam/util/ConstantUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../finish_exam/out/production/finish_exam/util/ReadAndWrite.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../finish_exam/out/production/finish_exam/view/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../finish_exam/src/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../finish_exam/src/data/danhBa.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../finish_exam/src/model/DanhBa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../finish_exam/src/service/DanhBaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../finish_exam/src/service/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../finish_exam/src/util/ConstantUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../finish_exam/src/util/ReadAndWrite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../finish_exam/src/view/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v2/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v2/data/car.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v2/data/motor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v2/data/truck.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v2/model/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v2/model/Manufacture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v2/model/Motor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v2/model/Truck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v2/model/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v2/service/CarService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v2/service/ManufactureService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v2/service/MotorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v2/service/TruckService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v2/service/VehicleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v2/util/ConstantUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v2/util/FileHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v2/view/VehicleView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v3/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v3/data/car.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v3/data/motor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v3/data/truck.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v3/model/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v3/model/Manufacture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v3/model/Motor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v3/model/Truck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v3/model/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v3/service/CarService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v3/service/ManufactureService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v3/service/MotorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v3/service/TruckService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v3/service/VehicleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v3/util/ConstantUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v3/util/FileHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../vehicle_management/src/v3/view/VehicleView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p1_collection/out/production/VehicleManager_p1_collection/model/Car.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p1_collection/out/production/VehicleManager_p1_collection/model/Manufacturer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p1_collection/out/production/VehicleManager_p1_collection/model/Motor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p1_collection/out/production/VehicleManager_p1_collection/model/Truck.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p1_collection/out/production/VehicleManager_p1_collection/model/Vehicle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p1_collection/out/production/VehicleManager_p1_collection/service/CarService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p1_collection/out/production/VehicleManager_p1_collection/service/ManufactureService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p1_collection/out/production/VehicleManager_p1_collection/service/MotorService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p1_collection/out/production/VehicleManager_p1_collection/service/TruckService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p1_collection/out/production/VehicleManager_p1_collection/service/VehicleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p1_collection/out/production/VehicleManager_p1_collection/util/ConstantUtil$TypeOfCar.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p1_collection/out/production/VehicleManager_p1_collection/util/ConstantUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p1_collection/out/production/VehicleManager_p1_collection/view/MainMenu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p2_file/out/production/VehicleManager_p2_file/data/car.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p2_file/out/production/VehicleManager_p2_file/data/motor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p2_file/out/production/VehicleManager_p2_file/data/truck.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p2_file/out/production/VehicleManager_p2_file/model/Car.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p2_file/out/production/VehicleManager_p2_file/model/Manufacturer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p2_file/out/production/VehicleManager_p2_file/model/Motor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p2_file/out/production/VehicleManager_p2_file/model/Truck.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p2_file/out/production/VehicleManager_p2_file/model/Vehicle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p2_file/out/production/VehicleManager_p2_file/service/CarService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p2_file/out/production/VehicleManager_p2_file/service/ManufactureService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p2_file/out/production/VehicleManager_p2_file/service/MotorService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p2_file/out/production/VehicleManager_p2_file/service/TruckService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p2_file/out/production/VehicleManager_p2_file/service/VehicleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p2_file/out/production/VehicleManager_p2_file/util/ConstantUtil$FilePath.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p2_file/out/production/VehicleManager_p2_file/util/ConstantUtil$TypeOfCar.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p2_file/out/production/VehicleManager_p2_file/util/ConstantUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p2_file/out/production/VehicleManager_p2_file/util/FileHelper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehicleManager_p2_file/out/production/VehicleManager_p2_file/view/MainMenu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VehicleManager_p3_improve.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Motor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Motor.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Klq7DgBsTUoZEgyWBorAIxJkQg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Workspace/codecode/A0822I1-DangVanNam/module2/vehicle_manager/vehicle_manager/VehicleManager_p3_improve&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ea461da-060d-4218-aa3d-54157e9cdf23" name="Changes" comment="" />
+      <created>1674559347638</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674559347638</updated>
+      <workItem from="1674559348748" duration="3905000" />
+      <workItem from="1674724243610" duration="2880000" />
+      <workItem from="1675249573511" duration="595000" />
+      <workItem from="1675583113060" duration="642000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
