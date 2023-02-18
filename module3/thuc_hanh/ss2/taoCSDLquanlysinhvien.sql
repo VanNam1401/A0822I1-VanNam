@@ -1,11 +1,12 @@
--- create database QuanLySinhVien;
-use QuanLySinhVien;
+create database ss2_thquanLySinhVien;
+use ss2_thquanLySinhVien;
 create table class(
 	ClassID int not null auto_increment primary key,
     ClassName varchar(60) not null,
     StartDate datetime not null,
     Status bit
 );
+
 
 create table Student(
 	StudentId int not null auto_increment primary key,
@@ -14,7 +15,7 @@ create table Student(
     Phone varchar(20),
     Status bit,
     ClassId int not null,
-    foreign key (ClassID) references Class(ClassID)
+    foreign key (ClassId) references Class(ClassID)
 );
 
 create table Subject(
