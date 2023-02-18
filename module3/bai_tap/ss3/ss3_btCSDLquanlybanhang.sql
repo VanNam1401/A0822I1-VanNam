@@ -56,10 +56,11 @@ select oID, oDate, oTotalPrice from orders;
 
 -- Hiển thị danh sách các khách hàng đã mua hàng, và danh sách sản phẩm được mua
 select c.Name, p.pName
-from customer c join orders o on c.id = o.cID 
-join  orderdetail od on o.id = od.oID 
-join product p on od.pID = p.ID;
+from customer c join orders o on c.cID = o.cID 
+join  orderdetail od on o.cID = od.oID 
+join product p on od.pID = p.pID;
 
 -- Hiển thị tên những khách hàng không mua bất kỳ một sản phẩm nào
-
+select c.Name from customer c left join orders o on c.cID = o.cID
+where o.oID is null;
 -- Hiển thị mã hóa đơn, ngày bán và giá tiền của từng hóa đơn
