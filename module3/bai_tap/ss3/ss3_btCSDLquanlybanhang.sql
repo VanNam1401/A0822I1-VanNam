@@ -64,3 +64,6 @@ join product p on od.pID = p.pID;
 select c.Name from customer c left join orders o on c.cID = o.cID
 where o.oID is null;
 -- Hiển thị mã hóa đơn, ngày bán và giá tiền của từng hóa đơn
+select o.oID, o.oDate, o.oTotalPrice as 'Tổng tiền' 
+from orders o join orderdetail od on o.oID = od.oID 
+join product p on od.pID = p.pID;
