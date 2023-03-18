@@ -22,7 +22,6 @@ public class UserServlet extends HttpServlet {
                 product = p;
             }
         }
-
     }
 
     @Override

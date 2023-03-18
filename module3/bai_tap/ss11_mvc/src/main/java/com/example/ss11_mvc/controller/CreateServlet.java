@@ -14,10 +14,9 @@ public class CreateServlet extends HttpServlet {
     private ProductService productService = new ProductServiceImpl();
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        request.getRequestDispatcher("/user/create.jsp");
     }
 
-    // id, tên sản phẩm, giá sản phẩm, mô tả của sản phẩm, nhà sản xuất.
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String id = request.getParameter("id");
@@ -27,5 +26,6 @@ public class CreateServlet extends HttpServlet {
         String producer = request.getParameter("producer");
         Product product = new Product(id, nameProduct, price, describe, producer);
         productService.create(product);
+        response.sendRedirect("/user/displayList.jsp");
     }
 }

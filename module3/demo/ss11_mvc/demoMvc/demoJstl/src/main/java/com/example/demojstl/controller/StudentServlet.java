@@ -18,7 +18,6 @@ public class StudentServlet extends HttpServlet {
         if (action == null) {
             action = "list";
         }
-
         switch (action) {
             case "list":
                 showList(request, response);
