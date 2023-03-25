@@ -72,10 +72,9 @@ public class UserDAO implements IUserDAO {
     @Override
     public List<User> selectAllUsers() {
         List<User> users = new ArrayList<>();
-        try (Connection connection = getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_USERS);) {
+        try(Connection connection = getConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_USERS);) {
             ResultSet resultSet = preparedStatement.executeQuery();
-            System.out.println(preparedStatement.executeQuery());
             while (resultSet.next()) {
                 int id = resultSet.getInt("id");
                 String name = resultSet.getString("name");
