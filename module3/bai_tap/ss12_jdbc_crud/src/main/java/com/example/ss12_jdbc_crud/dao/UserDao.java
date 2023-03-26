@@ -12,9 +12,9 @@ public class UserDao implements IUserDao {
     private String jdbcPassword = "12345";
     private static final String INSERT_USERS_SQL = "Insert into users" + "(name, email, country) values " + "(?,?,?);";
     private static final String SELECT_ALL_USERS = "select * from users";
-    private static final String SELECT_USERS_BY_ID = "select id, name, email, country * from users where id=?";
+    private static final String SELECT_USERS_BY_ID = "select id,name,email,country from users where id =?";
     private static final String DELETE_USERS_SQL = "delete from users where id = ?;";
-    private static final String UPDATE_USERS_SQL = "update users set name=?, email=?,country=? where id=?;";
+    private static final String UPDATE_USERS_SQL = "update users set name = ?,email= ?, country =? where id = ?;";
 
     public UserDao() {
     }
@@ -52,7 +52,7 @@ public class UserDao implements IUserDao {
              PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USERS_BY_ID);) {
             preparedStatement.setInt(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
-            while (resultSet.next()) {
+            if (resultSet.next()) {
                 String name = resultSet.getString("name");
                 String email = resultSet.getString("email");
                 String country = resultSet.getString("country");
@@ -104,6 +104,7 @@ public class UserDao implements IUserDao {
             preparedStatement.setString(1, user.getName());
             preparedStatement.setString(2, user.getEmail());
             preparedStatement.setString(3, user.getCountry());
+            preparedStatement.setInt(4, user.getId());
             rowUpdate = preparedStatement.executeUpdate() > 0;
         } catch (SQLException e) {
             e.printStackTrace();

@@ -14,6 +14,11 @@ public class UserServlet extends HttpServlet {
     private UserDao userDao;
 
     @Override
+    public void init() throws ServletException {
+        userDao = new UserDao();
+    }
+
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
         if (action == null) {
@@ -32,6 +37,7 @@ public class UserServlet extends HttpServlet {
                     break;
                 default:
                     listUser(request, response);
+                    break;
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -71,6 +77,7 @@ public class UserServlet extends HttpServlet {
     private void showEditForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         User existsUser = userDao.selectUser(id);
+        request.setAttribute("user", existsUser);
         request.getRequestDispatcher("/user/edit.jsp").forward(request, response);
     }
 
@@ -97,7 +104,7 @@ public class UserServlet extends HttpServlet {
         String country = request.getParameter("country");
         User user = new User(id, name, email, country);
         userDao.updateUser(user);
-        request.getRequestDispatcher("/user.edit.jsp").forward(request, response);
+        request.getRequestDispatcher("/user/edit.jsp").forward(request, response);
     }
 
 
