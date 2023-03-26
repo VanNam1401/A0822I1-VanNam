@@ -10,4 +10,5 @@ public interface IUserDao {
     List<User> selectAllUser();
     boolean deleteUser(int id);
     boolean updateUser(User user);
+    List<User> selectUser(String country);
 }

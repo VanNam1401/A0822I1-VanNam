@@ -17,6 +17,9 @@
     <h2>
         <a href="/users?action=create">Add new user</a>
     </h2>
+    <h2>
+        <a href="/users?action=search">Search</a>
+    </h2>
 </center>
 <div align="center">
     <table border="1" , cellpadding="5">
@@ -31,14 +34,14 @@
         <tr>
             <c:forEach var="user" items="${userList}">
         <tr>
-        <td><c:out value="${user.id}"/></td>
-        <td><c:out value="${user.name}"/></td>
-        <td><c:out value="${user.email}"/></td>
-        <td><c:out value="${user.country}"/></td>
-        <td>
-            <a href="/users?action=edit&id=${user.id}">Edit</a>
-            <a href="/users?action=delete&id=${user.id}">Delete</a>
-        </td>
+            <td><c:out value="${user.id}"/></td>
+            <td><c:out value="${user.name}"/></td>
+            <td><c:out value="${user.email}"/></td>
+            <td><c:out value="${user.country}"/></td>
+            <td>
+                <a href="/users?action=edit&id=${user.id}">Edit</a>
+                <a href="/users?action=delete&id=${user.id}">Delete</a>
+            </td>
         </tr>
         </c:forEach>
         </tr>

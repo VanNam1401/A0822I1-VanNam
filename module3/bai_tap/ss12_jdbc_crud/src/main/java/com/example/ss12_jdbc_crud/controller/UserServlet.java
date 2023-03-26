@@ -35,6 +35,9 @@ public class UserServlet extends HttpServlet {
                 case "delete":
                     deleteUser(request, response);
                     break;
+                case "search":
+                    searchUser(request, response);
+                    break;
                 default:
                     listUser(request, response);
                     break;
@@ -58,6 +61,9 @@ public class UserServlet extends HttpServlet {
                 case "edit":
                     updateUser(request, response);
                     break;
+                case "search":
+                    selectUser(request, response);
+                    break;
             }
         } catch (Exception e) {
             throw new RuntimeException(e);
@@ -70,8 +76,8 @@ public class UserServlet extends HttpServlet {
         request.getRequestDispatcher("/user/list.jsp").forward(request, response);
     }
 
-    private void showNewForm(HttpServletRequest request, HttpServletResponse response) {
-        request.getRequestDispatcher("/user/create.jsp");
+    private void showNewForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.getRequestDispatcher("/user/create.jsp").forward(request, response);
     }
 
     private void showEditForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -85,9 +91,10 @@ public class UserServlet extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
         userDao.deleteUser(id);
         List<User> userList = userDao.selectAllUser();
-        request.setAttribute("list", userList);
+        request.setAttribute("userList", userList);
         request.getRequestDispatcher("/user/list.jsp").forward(request, response);
     }
+
     private void insertUser(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String name = request.getParameter("name");
         String email = request.getParameter("email");
@@ -107,11 +114,14 @@ public class UserServlet extends HttpServlet {
         request.getRequestDispatcher("/user/edit.jsp").forward(request, response);
     }
 
+    private void searchUser(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.getRequestDispatcher("/user/search.jsp").forward(request, response);
+    }
 
-
-
-
-
-
-
+    private void selectUser(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String country = request.getParameter("country");
+        List<User> userList = userDao.selectUser(country);
+        request.setAttribute("user", userList);
+        request.getRequestDispatcher("/user/search.jsp").forward(request, response);
+    }
 }
