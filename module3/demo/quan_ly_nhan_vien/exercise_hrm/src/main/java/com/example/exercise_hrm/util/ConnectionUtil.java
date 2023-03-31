@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class ConstantUtil {
+public class ConnectionUtil {
     private static String jdbcURL = "jdbc:mysql://localhost:3306/demo_db";
     private static String jdbcUsername = "root";
     private static String jdbcPassword = "12345";
