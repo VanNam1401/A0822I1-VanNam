@@ -1,0 +1,20 @@
+Một công ty cần quản lý nhân sự
+Thông tin nhân viên như sau:
+- Mã nhân viên
+- Họ tên nhân viên
+- Ngày sinh
+- Địa chỉ
+- Ngày bắt đầu làm việc
+- Ngày kết thúc làm việc
+- Lương
+- Mã công việc
+Công việc gồm các trường
+- Mã công việc
+- Tên công việc
+- Lương thấp nhất
+- Lương cao nhất
+Chương trình có các chức năng sau:
+1. Thêm mới thông tin nhân viên
+2. Update thông tin nhân viên
+3. Liệt kê danh sách tất cả nhân viên
+4. Tìm kiếm nhân viên theo tên công việc hoặc ngày bắt đầu và ngày kết thúc

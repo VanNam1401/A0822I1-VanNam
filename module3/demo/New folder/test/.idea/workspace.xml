@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f6c949e0-3180-477a-aa69-7cffea2aad1a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../demo (1).zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/.idea/demo (1).iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_db.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/src/main/java/com/example/demo_quan_ly_nhan_vien/controller/NhanVienServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/src/main/java/com/example/demo_quan_ly_nhan_vien/model/CongViec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/src/main/java/com/example/demo_quan_ly_nhan_vien/model/NhanVien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/src/main/java/com/example/demo_quan_ly_nhan_vien/repository/CongViecRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/src/main/java/com/example/demo_quan_ly_nhan_vien/repository/CongViecRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/src/main/java/com/example/demo_quan_ly_nhan_vien/repository/NhanVienRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/src/main/java/com/example/demo_quan_ly_nhan_vien/repository/NhanVienRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/src/main/java/com/example/demo_quan_ly_nhan_vien/service/CongViecService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/src/main/java/com/example/demo_quan_ly_nhan_vien/service/CongViecServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/src/main/java/com/example/demo_quan_ly_nhan_vien/service/NhanVienService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/src/main/java/com/example/demo_quan_ly_nhan_vien/service/NhanVienServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/src/main/java/com/example/demo_quan_ly_nhan_vien/ultil/ConnectionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/src/main/webapp/user/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/src/main/webapp/user/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/demo_quan_ly_nhan_vien/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2).zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.gradle/6.3/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.gradle/6.3/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.gradle/6.3/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.gradle/6.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.gradle/6.3/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.gradle/6.5/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.gradle/6.5/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/classes/java/main/mvc/bean/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/classes/java/main/mvc/bean/ProductType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/classes/java/main/mvc/controller/ProductController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/classes/java/main/mvc/repository/CRUDRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/classes/java/main/mvc/repository/ProductRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/classes/java/main/mvc/repository/ProductTypeRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/classes/java/main/mvc/repository/impl/ProductRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/classes/java/main/mvc/repository/impl/ProductRepositoryImplCallable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/classes/java/main/mvc/repository/impl/ProductRepositoryImplDB.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/classes/java/main/mvc/repository/impl/ProductTypeRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/classes/java/main/mvc/service/CRUDService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/classes/java/main/mvc/service/ProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/classes/java/main/mvc/service/ProductTypeService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/classes/java/main/mvc/service/impl/ProductServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/classes/java/main/mvc/service/impl/ProductTypeServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/classes/java/main/mvc/utils/ConnectionUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/classes/java/main/mvc/utils/Constants.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/libs/demo-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/bean/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/controller/ProductController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/repository/CRUDRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/repository/ProductRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/repository/impl/ProductRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/repository/impl/ProductRepositoryImplCallable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/repository/impl/ProductRepositoryImplDB.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/service/CRUDService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/service/ProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/service/impl/ProductServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/utils/ConnectionUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/utils/Constants.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/study/SumServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/lib/mysql-connector-java-8.0.30.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/lib/protobuf-java-3.19.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/views/product/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/views/product/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/src/main/java/mvc/bean/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/src/main/java/mvc/bean/ProductType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/src/main/java/mvc/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/src/main/java/mvc/repository/CRUDRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/src/main/java/mvc/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/src/main/java/mvc/repository/ProductTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/src/main/java/mvc/repository/impl/ProductRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/src/main/java/mvc/repository/impl/ProductRepositoryImplCallable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/src/main/java/mvc/repository/impl/ProductRepositoryImplDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/src/main/java/mvc/repository/impl/ProductTypeRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/src/main/java/mvc/service/CRUDService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/src/main/java/mvc/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/src/main/java/mvc/service/ProductTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/src/main/java/mvc/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/src/main/java/mvc/service/impl/ProductTypeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/src/main/java/mvc/utils/ConnectionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/src/main/java/mvc/utils/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/src/main/webapp/WEB-INF/views/product/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/src/main/webapp/WEB-INF/views/product/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (2)/demo/src/main/webapp/result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3).zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.gradle/6.3/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.gradle/6.3/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.gradle/6.3/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.gradle/6.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.gradle/6.3/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.gradle/6.5/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.gradle/6.5/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/classes/java/main/mvc/bean/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/classes/java/main/mvc/controller/ProductController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/classes/java/main/mvc/repository/CRUDRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/classes/java/main/mvc/repository/ProductRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/classes/java/main/mvc/repository/impl/ProductRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/classes/java/main/mvc/repository/impl/ProductRepositoryImplCallable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/classes/java/main/mvc/repository/impl/ProductRepositoryImplDB.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/classes/java/main/mvc/service/CRUDService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/classes/java/main/mvc/service/ProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/classes/java/main/mvc/service/impl/ProductServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/classes/java/main/mvc/utils/ConnectionUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/classes/java/main/mvc/utils/Constants.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/classes/java/main/study/SumServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/libs/demo-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/bean/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/controller/ProductController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/repository/CRUDRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/repository/ProductRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/repository/impl/ProductRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/repository/impl/ProductRepositoryImplCallable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/repository/impl/ProductRepositoryImplDB.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/service/CRUDService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/service/ProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/service/impl/ProductServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/utils/ConnectionUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/mvc/utils/Constants.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/classes/study/SumServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/lib/mysql-connector-java-8.0.30.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/lib/protobuf-java-3.19.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/views/product/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/WEB-INF/views/product/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/libs/exploded/demo-1.0-SNAPSHOT.war/result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/src/main/java/mvc/bean/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/src/main/java/mvc/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/src/main/java/mvc/repository/CRUDRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/src/main/java/mvc/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/src/main/java/mvc/repository/impl/ProductRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/src/main/java/mvc/repository/impl/ProductRepositoryImplCallable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/src/main/java/mvc/repository/impl/ProductRepositoryImplDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/src/main/java/mvc/service/CRUDService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/src/main/java/mvc/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/src/main/java/mvc/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/src/main/java/mvc/utils/ConnectionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/src/main/java/mvc/utils/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/src/main/java/study/SumServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/src/main/webapp/WEB-INF/views/product/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/src/main/webapp/WEB-INF/views/product/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (3)/demo/src/main/webapp/result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/test/controller/Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/test/model/Job.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/test/model/Staff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/test/repository/StaffRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/test/util/ConstantUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/staff/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/staff/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.73-windows-x64/apache-tomcat-9.0.73/webapps/ROOT/WEB-INF/classes/com/example/ss12_jdbc_crud/HelloServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.73-windows-x64/apache-tomcat-9.0.73/webapps/ROOT/WEB-INF/classes/com/example/ss12_jdbc_crud/controller/UserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.73-windows-x64/apache-tomcat-9.0.73/webapps/ROOT/WEB-INF/classes/com/example/ss12_jdbc_crud/dao/IUserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.73-windows-x64/apache-tomcat-9.0.73/webapps/ROOT/WEB-INF/classes/com/example/ss12_jdbc_crud/dao/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.73-windows-x64/apache-tomcat-9.0.73/webapps/ROOT/WEB-INF/classes/com/example/ss12_jdbc_crud/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.73-windows-x64/apache-tomcat-9.0.73/webapps/ROOT/user/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.73-windows-x64/apache-tomcat-9.0.73/webapps/ROOT/user/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.73-windows-x64/apache-tomcat-9.0.73/webapps/ROOT/user/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.73-windows-x64/apache-tomcat-9.0.73/webapps/ROOT/user/search.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/ss12_jdbc_crud/src/main/webapp/user/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_tap/ss12_jdbc_crud/src/main/webapp/user/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/demo/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/demo/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/demo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/demo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/demo/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/demo/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/demo/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/demo/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/demo/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/demo/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/demo/src/main/java/com/example/demo/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/demo/src/main/java/th1_display_time/DemoServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/demo/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/demo/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/.gradle/7.4/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/.gradle/7.4/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/.gradle/7.4/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/.gradle/7.4/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/.idea/artifacts/unnamed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/build/classes/java/main/org/example/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kienroro/untitled/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/ss12_JDBC_CRUD/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/ss12_JDBC_CRUD/build.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Jsp File" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2NawJohYU2QunKCoqVubnycz42U" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Workspace/codecode/A0822I1-DangVanNam/module3/demo/demo (1)",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.731" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.731" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="Gradle : com.example : test-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="ebcb0596-5eba-41ef-a415-b229099e4d6f" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52003" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com.example : test-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f6c949e0-3180-477a-aa69-7cffea2aad1a" name="Changes" comment="" />
+      <created>1679915433823</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679915433823</updated>
+      <workItem from="1679915435019" duration="11779000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
