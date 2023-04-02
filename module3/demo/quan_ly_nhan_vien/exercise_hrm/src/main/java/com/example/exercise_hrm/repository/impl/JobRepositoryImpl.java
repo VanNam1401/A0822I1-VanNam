@@ -10,14 +10,28 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.example.exercise_hrm.util.ConstantUtil.getConnection;
+import static com.example.exercise_hrm.util.ConnectionUtil.getConnection;
 
 
 public class JobRepositoryImpl implements JobRepository {
     private static final String SELECT_ALL = "select * from job";
+    private static final String SELECT_JOB_BY_ID = "select * from job where job_id =?";
 
     @Override
-    public Job findById(String jobCode) {
+    public Job findById(int jobCode) {
+        try (Connection connection = getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_JOB_BY_ID)) {
+            preparedStatement.setInt(1, jobCode);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if (resultSet.next()) {
+                String nameJob = resultSet.getString("job_name");
+                int minSalary = resultSet.getInt("min_salary");
+                int maxSalary = resultSet.getInt("max_salary");
+                return new Job(jobCode, nameJob, minSalary, maxSalary);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return null;
     }
 

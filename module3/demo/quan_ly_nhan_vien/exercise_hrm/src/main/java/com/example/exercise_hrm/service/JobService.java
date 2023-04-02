@@ -5,7 +5,7 @@ import com.example.exercise_hrm.model.Job;
 import java.util.List;
 
 public interface JobService {
-    Job findById(String jobCode);
+    Job findById(int jobCode);
 
     List<Job> findAll();
 }

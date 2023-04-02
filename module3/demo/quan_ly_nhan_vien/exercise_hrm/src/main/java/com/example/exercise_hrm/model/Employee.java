@@ -2,7 +2,7 @@ package com.example.exercise_hrm.model;
 
 import java.util.Date;
 
-public class Employee {
+public class Employee implements Comparable<Employee>{
     private int id;
     private String name;
     private Date birthday;
@@ -11,6 +11,7 @@ public class Employee {
     private Date endDate;
     private int salary;
     private int jobCode;
+    private String nameJob;
 
     public Employee() {
     }
@@ -34,6 +35,18 @@ public class Employee {
         this.endDate = endDate;
         this.salary = salary;
         this.jobCode = jobCode;
+    }
+
+    public Employee(int id, String name, Date birthday, String address, Date startDate, Date endDate, int salary, int jobCode, String nameJob) {
+        this.id = id;
+        this.name = name;
+        this.birthday = birthday;
+        this.address = address;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.salary = salary;
+        this.jobCode = jobCode;
+        this.nameJob = nameJob;
     }
 
     public int getId() {
@@ -98,5 +111,19 @@ public class Employee {
 
     public void setJobCode(int jobCode) {
         this.jobCode = jobCode;
+    }
+
+    public String getNameJob() {
+        return nameJob;
+    }
+
+    public void setNameJob(String nameJob) {
+        this.nameJob = nameJob;
+    }
+
+    @Override
+    public int compareTo(Employee o) {
+//        return Integer.compare(this.getId(), o.getId());
+        return this.getName().compareTo(o.getName());
     }
 }

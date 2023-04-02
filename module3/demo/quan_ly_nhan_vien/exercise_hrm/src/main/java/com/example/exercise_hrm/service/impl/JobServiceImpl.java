@@ -10,8 +10,8 @@ import java.util.List;
 public class JobServiceImpl implements JobService {
     private JobRepository repository = new JobRepositoryImpl();
     @Override
-    public Job findById(String jobCode) {
-        return null;
+    public Job findById(int jobCode) {
+        return repository.findById(jobCode);
     }
 
     @Override
