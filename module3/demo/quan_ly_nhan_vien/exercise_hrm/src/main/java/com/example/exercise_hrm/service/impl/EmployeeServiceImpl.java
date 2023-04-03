@@ -43,6 +43,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public List<Employee> search(Date startDate, Date endDate) {
-        return null;
+        return repository.search(startDate, endDate);
     }
 }

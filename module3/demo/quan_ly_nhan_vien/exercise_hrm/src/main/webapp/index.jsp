@@ -11,12 +11,14 @@
 <center>
     <h1>Employee Manager</h1>
     <h2>
-        <a href="/?action=create">Add new employee</a>
+        <a href="/?action=create">Add new employee</a><br>
+        <a href="/?action=searchTime">Search over time</a>
     </h2>
 </center>
-<div align="center">
-    <form method="get" action="/?action=search">
+<div align="center" >
+    <form method="get">
         <input type="text" name="jobName" id="search" size="25">
+        <input type="hidden" name="action" value="search"/>
         <button type="submit">Search</button>
         <br>
     </form>

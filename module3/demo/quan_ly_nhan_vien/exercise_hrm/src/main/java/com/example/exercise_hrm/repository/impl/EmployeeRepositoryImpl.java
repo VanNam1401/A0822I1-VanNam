@@ -22,6 +22,8 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
 
     private static final String DELETE_EMPLOYEE_ID = "delete from staff where id = ?";
     private static final String SELECT_EMPLOYEE_BY_ID = "select * from staff where id =?";
+    private static final String SELECT_EMPLOYEE_BY_DATE = "SELECT * FROM staff join job on staff.job_id = job.job_id WHERE day_start BETWEEN ? " +
+            "AND ? AND day_end BETWEEN ? AND ?;";
 
     @Override
     public void add(Employee employee) {
@@ -134,7 +136,7 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
                 Date endDate = resultSet.getDate("day_end");
                 int salary = resultSet.getInt("salary");
                 int jobCode = resultSet.getInt("job_id");
-                employeeList.add(new Employee(id, name, birthday, address, startDate, endDate, salary, jobCode));
+                employeeList.add(new Employee(id, name, birthday, address, startDate, endDate, salary, jobCode, jobName));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -144,6 +146,31 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
 
     @Override
     public List<Employee> search(Date startDate, Date endDate) {
+        List<Employee> employeeList = new ArrayList<>();
+        try (Connection connection = getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_EMPLOYEE_BY_DATE)) {
+//            preparedStatement.setDate(1, (java.sql.Date) startDate);
+            preparedStatement.setDate(1, new java.sql.Date(startDate.getTime()));
+//            preparedStatement.setDate(2, (java.sql.Date) endDate);
+            preparedStatement.setDate(2, new java.sql.Date(endDate.getTime()));
+            preparedStatement.setDate(3, new java.sql.Date(startDate.getTime()));
+            preparedStatement.setDate(4, new java.sql.Date(endDate.getTime()));
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                int id = resultSet.getInt("id");
+                String name = resultSet.getString("name");
+                Date birthday = resultSet.getDate("date_birth");
+                String address = resultSet.getString("address");
+                Date startdate = resultSet.getDate("day_start");
+                Date enddate = resultSet.getDate("day_end");
+                int salary = resultSet.getInt("salary");
+                int jobCode = resultSet.getInt("job_id");
+                String jobName = resultSet.getString("job_name");
+                employeeList.add(new Employee(id, name, birthday, address, startdate, enddate, salary, jobCode, jobName));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return null;
     }
 }
