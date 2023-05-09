@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%--
   Created by IntelliJ IDEA.
   User: vanna
@@ -19,10 +20,10 @@
     </h2>
 </div>
 <div align="center">
-    <form>
+    <form method="get">
         <input type="hidden" name="action" value="submit"/>
-        <input type="date" name="dayStart" size="15">
-        <input type="date" name="dayEnd" size="15"><br>
+        <input type="date" name="dayStart" size="15" value="${param.dayStart}" />
+        <input type="date" name="dayEnd" size="15" value="${param.dayEnd}" /><br>
         <button type="submit">Search</button>
     </form>
 </div>
@@ -59,6 +60,7 @@
             </c:forEach>
         </table>
     </div>
+<%--    <c:redirect url="searchTime.jsp"/>--%>
 </c:if>
 </body>
 </html>

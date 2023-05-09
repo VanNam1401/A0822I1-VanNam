@@ -12,13 +12,20 @@
 </head>
 <body>
 
-</div>
 <center>
     <h1>Management Product</h1>
     <h2>
         <a href="/?action=create">Add Product</a><br>
     </h2>
 </center>
+<div align="center">
+    <form method="get">
+        <input type="text" name="name_product" id="search" size="25">
+        <input type="hidden" name="action" value="search"/>
+        <button type="submit">Search</button>
+        <br>
+    </form>
+</div>
 <div align="center">
     <table border="1" cellpadding="5">
         <h2>List Product</h2>
@@ -44,7 +51,7 @@
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                         Delete
                     </button>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    <div class="modal fade" id="exampleModal${e.id}" tabindex="-1" role="dialog"
                          aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
@@ -59,8 +66,11 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button onclick="alert('Xóa thành công')" type="button" class="btn btn-primary"><a
-                                            href="/?action=delete&id=${e.id}">Save changes</a></button>
+                                    <a href="/?action=delete&id=${e.id}">
+                                        <button onclick="alert('Xóa thành công')" type="button" class="btn btn-primary">
+                                            Yes
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>

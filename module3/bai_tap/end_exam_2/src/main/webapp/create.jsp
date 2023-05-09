@@ -63,6 +63,7 @@
       <tr>
         <td colspan="2" align="center">
           <input type="submit" value="Create">
+          <button><a href="?action=">Back</a></button>
         </td>
       </tr>
     </table>

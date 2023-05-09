@@ -1,7 +1,7 @@
-package com.example.end_exam.repository.impl;
+package com.example.end_exam_2.repository.impl;
 
-import com.example.end_exam.model.Product;
-import com.example.end_exam.repository.ProductRepository;
+import com.example.end_exam_2.model.Product;
+import com.example.end_exam_2.repository.ProductRepository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,7 +11,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import static com.example.end_exam.util.ConnectionUtil.getConnection;
+import static com.example.end_exam_2.util.ConnectionUtil.getConnection;
+import static com.example.end_exam_2.util.ConnectionUtil.getConnection;
 
 public class ProductRepositoryImpl implements ProductRepository {
     private static final String SELECT_ALL = "select * from product join category on product.id_danh_muc = category.id_danh_muc;";
@@ -19,6 +20,7 @@ public class ProductRepositoryImpl implements ProductRepository {
     private static final String INSERT_PRODUCT = "INSERT INTO product(name, price, so_luong, color, mo_ta, id_danh_muc) value (?,?,?,?,?,?)";
     private static final String SELECT_PRODUCT_BY_ID = "select * from product join category on product.id_danh_muc = category.id_danh_muc where id =?";
     private static final String UPDATE_PRODUCT_BY_ID = "update product set name =?, price =?, so_luong =?, color=?, mo_ta=?, id_danh_muc=? where id =?;";
+    private static final String SELECT_ALL_BY_NAME_PRODUCT = "select * from product join category on product.id_danh_muc = category.id_danh_muc where name like ?";
 
     @Override
     public void add(Product product) {
@@ -111,5 +113,28 @@ public class ProductRepositoryImpl implements ProductRepository {
             e.printStackTrace();
         }
         return rowDeleted;
+    }
+
+    @Override
+    public List<Product> findByNameJob(String name_product) {
+        List<Product> list = new ArrayList<>();
+        try (Connection connection = getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_BY_NAME_PRODUCT)) {
+            preparedStatement.setString(1, '%' + name_product +'%');
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                int id = resultSet.getInt("id");
+                String name = resultSet.getString("name");
+                int price = resultSet.getInt("price");
+                int quantity = resultSet.getInt("so_luong");
+                String color = resultSet.getString("color");
+                String describe = resultSet.getString("mo_ta");
+                int id_product = resultSet.getInt("id_danh_muc");
+                list.add(new Product(id, name, price, quantity, color, describe, id_product, name_product));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
     }
 }

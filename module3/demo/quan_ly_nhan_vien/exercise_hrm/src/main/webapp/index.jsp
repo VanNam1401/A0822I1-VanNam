@@ -16,9 +16,9 @@
     </h2>
 </center>
 <div align="center" >
-    <form method="get">
+    <form method="get" action="/EmployeeServlet?action=search">
         <input type="text" name="jobName" id="search" size="25">
-        <input type="hidden" name="action" value="search"/>
+<%--        <input type="hidden" name="action" value="search"/>--%>
         <button type="submit">Search</button>
         <br>
     </form>

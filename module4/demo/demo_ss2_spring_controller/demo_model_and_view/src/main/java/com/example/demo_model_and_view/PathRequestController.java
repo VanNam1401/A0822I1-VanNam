@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class HelloController {
+public class PathRequestController {
     @RequestMapping(value = "requestParam")
     public void testRequestParam(@RequestParam String user, @RequestParam int age) {
         System.out.println("User: " + user);

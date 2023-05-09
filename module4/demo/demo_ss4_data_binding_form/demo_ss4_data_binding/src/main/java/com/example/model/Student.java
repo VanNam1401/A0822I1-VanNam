@@ -1,2 +1,5 @@
-package com.example.model;public class Student {
+package com.example.model;
+
+public class Student {
+//    private
 }

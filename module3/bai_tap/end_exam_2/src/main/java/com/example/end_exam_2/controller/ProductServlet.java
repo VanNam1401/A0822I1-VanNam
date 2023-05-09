@@ -1,11 +1,11 @@
-package com.example.end_exam.controller;
+package com.example.end_exam_2.controller;
 
 
-import com.example.end_exam.model.Product;
-import com.example.end_exam.service.CategoryService;
-import com.example.end_exam.service.ProductService;
-import com.example.end_exam.service.impl.CategoryServiceImpl;
-import com.example.end_exam.service.impl.ProductServiceImpl;
+import com.example.end_exam_2.model.Product;
+import com.example.end_exam_2.service.CategoryService;
+import com.example.end_exam_2.service.ProductService;
+import com.example.end_exam_2.service.impl.CategoryServiceImpl;
+import com.example.end_exam_2.service.impl.ProductServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -44,6 +44,9 @@ public class ProductServlet extends HttpServlet {
                 break;
             case "edit":
                 showEditForm(request, response);
+                break;
+            case "search":
+                searchProduct(request, response);
                 break;
             default:
                 listProduct(request, response);
@@ -109,5 +112,10 @@ public class ProductServlet extends HttpServlet {
         int id_product = Integer.parseInt(request.getParameter("category"));
         productService.add(new Product(name, price, quantity, color, describe, id_product));
         response.sendRedirect("/");
+    }
+    private void searchProduct(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String nameProduct = request.getParameter("name_product");
+        request.setAttribute("list", productService.findByNameJob(nameProduct));
+        request.getRequestDispatcher("/index.jsp").forward(request, response);
     }
 }

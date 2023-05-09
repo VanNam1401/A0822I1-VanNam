@@ -18,6 +18,6 @@
     <input type="text" name="input" value="${param.input}">
     <button type="submit">Change</button>
 </form>
-<p>Result: <fmt:formatNumber value="${result}" pattern="###,###"/></p>
+<p>Result: ${result}</p>
 </body>
 </html>

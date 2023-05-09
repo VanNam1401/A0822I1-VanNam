@@ -1,6 +1,6 @@
-package com.example.end_exam.repository;
+package com.example.end_exam_2.repository;
 
-import com.example.end_exam.model.Category;
+import com.example.end_exam_2.model.Category;
 
 import java.util.List;
 

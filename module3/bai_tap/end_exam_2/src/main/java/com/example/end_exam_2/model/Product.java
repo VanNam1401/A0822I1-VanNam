@@ -1,4 +1,4 @@
-package com.example.end_exam.model;
+package com.example.end_exam_2.model;
 
 public class Product {
     private int id;

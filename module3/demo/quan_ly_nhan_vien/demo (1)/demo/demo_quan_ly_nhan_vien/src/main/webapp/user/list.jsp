@@ -40,7 +40,6 @@
                 </tr>
                 <c:forEach var="s" items="${search_country}">
                     <tr>
-
                         <th>${s.id}</th>
                         <th>${s.name}</th>
                         <th>${s.email}</th>

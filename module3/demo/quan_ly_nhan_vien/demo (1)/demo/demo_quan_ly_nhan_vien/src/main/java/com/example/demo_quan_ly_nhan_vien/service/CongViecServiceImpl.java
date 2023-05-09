@@ -8,6 +8,7 @@ import java.util.List;
 
 public class CongViecServiceImpl implements CongViecService {
     private CongViecRepository repository = new CongViecRepositoryImpl();
+
     @Override
     public CongViec findById(String maCongViec) {
         return repository.findById(maCongViec);
@@ -17,4 +18,4 @@ public class CongViecServiceImpl implements CongViecService {
     public List<CongViec> findAll() {
         return repository.findAll();
     }
-                      }
+}

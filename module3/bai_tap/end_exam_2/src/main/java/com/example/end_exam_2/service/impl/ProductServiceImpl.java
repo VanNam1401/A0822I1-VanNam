@@ -1,9 +1,9 @@
-package com.example.end_exam.service.impl;
+package com.example.end_exam_2.service.impl;
 
-import com.example.end_exam.model.Product;
-import com.example.end_exam.repository.ProductRepository;
-import com.example.end_exam.repository.impl.ProductRepositoryImpl;
-import com.example.end_exam.service.ProductService;
+import com.example.end_exam_2.model.Product;
+import com.example.end_exam_2.repository.ProductRepository;
+import com.example.end_exam_2.repository.impl.ProductRepositoryImpl;
+import com.example.end_exam_2.service.ProductService;
 
 import java.util.List;
 
@@ -33,5 +33,10 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public boolean delete(int id) {
         return repository.delete(id);
+    }
+
+    @Override
+    public List<Product> findByNameJob(String name_product) {
+        return repository.findByNameJob(name_product);
     }
 }

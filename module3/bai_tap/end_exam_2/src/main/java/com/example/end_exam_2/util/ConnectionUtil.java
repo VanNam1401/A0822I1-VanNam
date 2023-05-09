@@ -1,4 +1,4 @@
-package com.example.end_exam.util;
+package com.example.end_exam_2.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

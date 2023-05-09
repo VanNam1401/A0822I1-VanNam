@@ -1,6 +1,8 @@
-package com.example.end_exam.service;
+package com.example.end_exam_2.service;
 
-import com.example.end_exam.model.Category;
+
+
+import com.example.end_exam_2.model.Category;
 
 import java.util.List;
 

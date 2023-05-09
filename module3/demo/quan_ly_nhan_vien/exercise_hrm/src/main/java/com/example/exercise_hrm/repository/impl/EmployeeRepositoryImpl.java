@@ -145,32 +145,30 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
     }
 
     @Override
-    public List<Employee> search(Date startDate, Date endDate) {
+    public List<Employee> search(Date begin, Date end) {
         List<Employee> employeeList = new ArrayList<>();
         try (Connection connection = getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(SELECT_EMPLOYEE_BY_DATE)) {
-//            preparedStatement.setDate(1, (java.sql.Date) startDate);
-            preparedStatement.setDate(1, new java.sql.Date(startDate.getTime()));
-//            preparedStatement.setDate(2, (java.sql.Date) endDate);
-            preparedStatement.setDate(2, new java.sql.Date(endDate.getTime()));
-            preparedStatement.setDate(3, new java.sql.Date(startDate.getTime()));
-            preparedStatement.setDate(4, new java.sql.Date(endDate.getTime()));
+            preparedStatement.setDate(1, new java.sql.Date(begin.getTime()));
+            preparedStatement.setDate(2, new java.sql.Date(end.getTime()));
+            preparedStatement.setDate(3, new java.sql.Date(begin.getTime()));
+            preparedStatement.setDate(4, new java.sql.Date(end.getTime()));
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 int id = resultSet.getInt("id");
                 String name = resultSet.getString("name");
                 Date birthday = resultSet.getDate("date_birth");
                 String address = resultSet.getString("address");
-                Date startdate = resultSet.getDate("day_start");
-                Date enddate = resultSet.getDate("day_end");
+                Date startDate = resultSet.getDate("day_start");
+                Date endDate = resultSet.getDate("day_end");
                 int salary = resultSet.getInt("salary");
                 int jobCode = resultSet.getInt("job_id");
                 String jobName = resultSet.getString("job_name");
-                employeeList.add(new Employee(id, name, birthday, address, startdate, enddate, salary, jobCode, jobName));
+                employeeList.add(new Employee(id, name, birthday, address, startDate, endDate, salary, jobCode, jobName));
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return null;
+        return employeeList;
     }
 }

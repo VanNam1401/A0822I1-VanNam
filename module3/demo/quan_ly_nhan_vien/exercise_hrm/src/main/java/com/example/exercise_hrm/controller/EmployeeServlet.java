@@ -49,10 +49,8 @@ public class EmployeeServlet extends HttpServlet {
                 searchEmployee(request, response);
                 break;
             case "searchTime":
-                searchTimeEmployee(request, response);
-                break;
             case "submit":
-                submit(request, response);
+                searchTimeEmployee(request, response);
                 break;
             default:
                 listEmployee(request, response);
@@ -142,7 +140,25 @@ public class EmployeeServlet extends HttpServlet {
     }
 
     private void searchTimeEmployee(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        if ("submit".equals(request.getParameter("action"))) {
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            dateFormat.setLenient(false);
+            try {
+                Date startDate = dateFormat.parse(request.getParameter("dayStart"));
+                Date endDate = dateFormat.parse(request.getParameter("dayEnd"));
+
+                // Chuyển đổi java.util.Date thành java.sql.Date
+                java.sql.Date sqlStartDate = new java.sql.Date(startDate.getTime());
+                java.sql.Date sqlEndDate = new java.sql.Date(endDate.getTime());
+                request.setAttribute("employeeList", employeeService.search(sqlStartDate, sqlEndDate));
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+        }
         request.getRequestDispatcher("/searchTime.jsp").forward(request, response);
+    }
+
+//    private void submit(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 //        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 //        dateFormat.setLenient(false);
 //        try {
@@ -152,29 +168,10 @@ public class EmployeeServlet extends HttpServlet {
 //            // Chuyển đổi java.util.Date thành java.sql.Date
 //            java.sql.Date sqlStartDate = new java.sql.Date(startDate.getTime());
 //            java.sql.Date sqlEndDate = new java.sql.Date(endDate.getTime());
-//
 //            request.setAttribute("employeeList", employeeService.search(sqlStartDate, sqlEndDate));
 //        } catch (ParseException e) {
 //            e.printStackTrace();
 //        }
-//        response.sendRedirect("/searchTime.jsp");
-    }
-
-    private void submit(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        dateFormat.setLenient(false);
-        try {
-            Date startDate = dateFormat.parse(request.getParameter("dayStart"));
-            Date endDate = dateFormat.parse(request.getParameter("dayEnd"));
-
-            // Chuyển đổi java.util.Date thành java.sql.Date
-            java.sql.Date sqlStartDate = new java.sql.Date(startDate.getTime());
-            java.sql.Date sqlEndDate = new java.sql.Date(endDate.getTime());
-
-            request.setAttribute("employeeList", employeeService.search(sqlStartDate, sqlEndDate));
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        request.getRequestDispatcher("/searchTime.jsp").forward(request, response);
-    }
+//        request.getRequestDispatcher("/searchTime.jsp").forward(request, response);
+//    }
 }

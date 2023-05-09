@@ -1,6 +1,6 @@
-package com.example.end_exam.repository;
+package com.example.end_exam_2.repository;
 
-import com.example.end_exam.model.Product;
+import com.example.end_exam_2.model.Product;
 
 import java.util.List;
 
@@ -14,5 +14,7 @@ public interface ProductRepository {
     Product findById(int id);
 
     boolean delete(int id);
+
+    List<Product> findByNameJob(String name_product);
 
 }

@@ -1,7 +1,7 @@
-package com.example.end_exam.repository.impl;
+package com.example.end_exam_2.repository.impl;
 
-import com.example.end_exam.model.Category;
-import com.example.end_exam.repository.CategoryRepository;
+import com.example.end_exam_2.model.Category;
+import com.example.end_exam_2.repository.CategoryRepository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.example.end_exam.util.ConnectionUtil.getConnection;
+import static com.example.end_exam_2.util.ConnectionUtil.getConnection;
 
 public class CategoryRepositoryImpl implements CategoryRepository {
     private static final String SELECT_ALL = "select * from category;";

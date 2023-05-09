@@ -1,9 +1,10 @@
-package com.example.end_exam.service.impl;
+package com.example.end_exam_2.service.impl;
 
-import com.example.end_exam.model.Category;
-import com.example.end_exam.repository.CategoryRepository;
-import com.example.end_exam.repository.impl.CategoryRepositoryImpl;
-import com.example.end_exam.service.CategoryService;
+
+import com.example.end_exam_2.model.Category;
+import com.example.end_exam_2.repository.CategoryRepository;
+import com.example.end_exam_2.repository.impl.CategoryRepositoryImpl;
+import com.example.end_exam_2.service.CategoryService;
 
 import java.util.List;
 
