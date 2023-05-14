@@ -24,16 +24,6 @@ public class Student {
     @JoinColumn(name = "id_classroom")
     private ClassRoom classRoom;
 
-//    public Student() {
-//    }
-//
-//    public Student(int codeStudent, String nameStudent, double point, Integer gender) {
-//        this.codeStudent = codeStudent;
-//        this.nameStudent = nameStudent;
-//        this.point = point;
-//        this.gender = gender;
-//    }
-
     public Integer getCodeStudent() {
         return codeStudent;
     }
