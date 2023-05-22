@@ -15,8 +15,9 @@
         <th>Name</th>
         <th>Point</th>
         <th>Gender</th>
+        <th>Classroom</th>
         <th>Detail</th>
-        <th>Add</th>
+        <th>Add Room</th>
     </tr>
     <tr th:each="student,loop : ${listStudent.content}">
         <td th:text="${loop.count}"></td>
@@ -29,12 +30,13 @@
             <p th:if="${student.gender == 1}">Nữ</p>
             <p th:if="${student.gender == null}">Khác</p>
         </td>
+        <td th:text="${student.classRoom.nameClass}"></td>
         <td><a th:href="@{/student/detail/{id}(id = ${student.codeStudent})}">Detail</a></td>
         <td><a th:href="@{/student/addRoom/{id}(id = ${student.codeStudent})}">Add</a></td>
     </tr>
 </table>
 <span>
-    <a th:if="${listStudent.hasPrevious()}" th:href="@{student(page = ${listStudent.number - 1})}">Truoc</a>
+    <a th:if="${listStudent.hasPrevious()}" th:href="@{student(page = ${listStudent.number - 1})}">Trước</a>
 </span>
 <span>
     <a th:if="${listStudent.hasNext()}" th:href="@{student(page = ${listStudent.number + 1})}">Sau</a>

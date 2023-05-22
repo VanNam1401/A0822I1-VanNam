@@ -13,8 +13,8 @@ import java.util.List;
 @Repository
 @Transactional
 public interface IStudentRepository extends JpaRepository<Student, Integer> {
-    @Modifying
-    //    @Query(value = "select s from Student s where s.nameStudent like :name")
-    @Query(value = "select * from student  where name_student like :name", nativeQuery = true)
-    List<Student> findStudentByName(@Param(value = "name") String name);
+//    @Modifying
+//    //    @Query(value = "select s from Student s where s.nameStudent like :name")
+//    @Query(value = "select * from student  where name_student like :name", nativeQuery = true)
+//    List<Student> findStudentByName(@Param(value = "name") String name);
 }

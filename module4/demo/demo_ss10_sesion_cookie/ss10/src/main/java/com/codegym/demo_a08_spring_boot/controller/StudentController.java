@@ -1,11 +1,12 @@
-package com.example.demo_module4_spring_boot.controller;
+package com.codegym.demo_a08_spring_boot.controller;
 
-import com.example.demo_module4_spring_boot.dto.StudentCreateDTO;
-import com.example.demo_module4_spring_boot.model.Student;
-import com.example.demo_module4_spring_boot.service.IClassRoomService;
-import com.example.demo_module4_spring_boot.service.IStudentService;
+import com.codegym.demo_a08_spring_boot.dto.StudentCreateDTO;
+import com.codegym.demo_a08_spring_boot.model.Student;
+import com.codegym.demo_a08_spring_boot.service.IClassRoomService;
+import com.codegym.demo_a08_spring_boot.service.IStudentService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -18,31 +19,28 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.List;
 
+//@RequestMapping("student")
 @Controller
-@SessionAttributes("StudentTalkList")
+@SessionAttributes("studentTalkList")
 public class StudentController {
 
-    private IStudentService iStudentService;
-
-    private IClassRoomService iClassRoomService;
-
     @Autowired
-    public StudentController(IStudentService iStudentService, IClassRoomService iClassRoomService) {
-        this.iStudentService = iStudentService;
-        this.iClassRoomService = iClassRoomService;
-    }
+    private IStudentService iStudentService;
 
     @ModelAttribute("studentTalkList")
     public List<Student> studentList() {
         return new ArrayList<>();
     }
 
+    @Autowired
+    private IClassRoomService iClassRoomService;
+
     @GetMapping("/student")
     public String getList(Model model, @RequestParam(defaultValue = "0") int page) {
         if (page < 0) {
             page = 0;
         }
-//        Page<Student> students = iStudentService.getAllByPage(page);
+        Page<Student> students = iStudentService.getAllByPage(page);
         model.addAttribute("listStudent", iStudentService.getAllByPage(page));
         return "list";
     }
@@ -57,11 +55,11 @@ public class StudentController {
 
     @GetMapping("/student/addRoom/{codeStudent}")
     public String addRoom(@PathVariable Integer codeStudent,
-                          @ModelAttribute("studentTalkList") List<Student> studentTalkList,
-                          RedirectAttributes redirect) {
+                                       @ModelAttribute("studentTalkList") List<Student> studentTalkList,
+                                       Model model, RedirectAttributes redirec) {
         Student student = iStudentService.getStudentById(codeStudent);
         studentTalkList.add(student);
-        redirect.addFlashAttribute("msg", "Add Talk list successfully");
+        redirec.addFlashAttribute("msg","Add talk list successfully");
         return "redirect:/student";
     }
 
@@ -105,21 +103,22 @@ public class StudentController {
 //        new StudentCreateDTO().validate(studentCreateDTO, bindingResult);
         if (bindingResult.hasErrors()) {
             model.addAttribute("gender", new Integer[]{0, 1, 2});
-            model.addAttribute("classRooms", iClassRoomService.getAll());
             return "create";
         }
         Student student = new Student();
         BeanUtils.copyProperties(studentCreateDTO, student);
         iStudentService.save(student);
         Cookie cookie = new Cookie("countStudent", Integer.parseInt(countStudent) + 1 + "");
-        cookie.setMaxAge(24 * 60 * 60 * 265 * 100); // set thoi gian ton tai cua cookie, tinh theo milli giay
+        cookie.setMaxAge(24 * 60 * 60 * 365 * 100);
         response.addCookie(cookie);
         redirect.addFlashAttribute("msg", "Thêm mới thành công");
         return "redirect:/student";
     }
 
+
     @ExceptionHandler(Exception.class)
     public String handle() {
         return "error";
     }
+
 }

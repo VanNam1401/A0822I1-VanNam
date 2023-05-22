@@ -1,8 +1,8 @@
-package com.example.demo_module4_spring_boot.service.impl;
+package com.codegym.demo_a08_spring_boot.service.impl;
 
-import com.example.demo_module4_spring_boot.model.Student;
-import com.example.demo_module4_spring_boot.repository.IStudentRepository;
-import com.example.demo_module4_spring_boot.service.IStudentService;
+import com.codegym.demo_a08_spring_boot.model.Student;
+import com.codegym.demo_a08_spring_boot.repository.IStudentRepository;
+import com.codegym.demo_a08_spring_boot.service.IStudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -13,13 +13,8 @@ import java.util.List;
 
 @Service
 public class StudentService implements IStudentService {
-
-    private IStudentRepository iStudentRepository;
-
     @Autowired
-    public StudentService(IStudentRepository iStudentRepository) {
-        this.iStudentRepository = iStudentRepository;
-    }
+    private IStudentRepository iStudentRepository;
 
     @Override
     public List<Student> getAll() {
@@ -28,8 +23,8 @@ public class StudentService implements IStudentService {
 
     @Override
     public Page<Student> getAllByPage(int page) {
-        return iStudentRepository.findAll(PageRequest.of(page, 5));
-//        return iStudentRepository.findAll(PageRequest.of(page, 5, Sort.by("point").descending()));
+
+        return iStudentRepository.findAll(PageRequest.of(page,2, Sort.by("point").descending()) );
     }
 
     @Override
