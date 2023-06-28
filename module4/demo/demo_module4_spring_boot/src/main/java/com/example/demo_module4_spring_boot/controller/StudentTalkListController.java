@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.SessionAttribute;
 
 import java.util.List;
 
+//danh sách các student được add
 @Controller
 public class StudentTalkListController {
     @GetMapping("/talk")

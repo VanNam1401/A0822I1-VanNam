@@ -18,9 +18,11 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/student")
+@CrossOrigin("*")
 public class StudentRestController {
     private final IStudentService iStudentService;
 
+    @Autowired
     public StudentRestController(IStudentService iStudentService) {
         this.iStudentService = iStudentService;
     }

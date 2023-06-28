@@ -29,6 +29,7 @@ public class StudentService implements IStudentService {
     @Override
     public Page<Student> getAllByPage(int page) {
         return iStudentRepository.findAll(PageRequest.of(page, 5));
+        //sx giam dan theo point
 //        return iStudentRepository.findAll(PageRequest.of(page, 5, Sort.by("point").descending()));
     }
 

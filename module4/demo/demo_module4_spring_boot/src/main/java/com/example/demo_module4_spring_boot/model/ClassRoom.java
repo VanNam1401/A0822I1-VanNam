@@ -1,6 +1,7 @@
 package com.example.demo_module4_spring_boot.model;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
@@ -8,6 +9,7 @@ import javax.persistence.*;
 @Entity(name = "classroom")
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 public class ClassRoom {
 
     @Id
@@ -16,20 +18,4 @@ public class ClassRoom {
 
     @Column(name = "name_class", columnDefinition = "VARCHAR(50)")
     private String nameClass;
-    
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getNameClass() {
-        return nameClass;
-    }
-
-    public void setNameClass(String nameClass) {
-        this.nameClass = nameClass;
-    }
 }

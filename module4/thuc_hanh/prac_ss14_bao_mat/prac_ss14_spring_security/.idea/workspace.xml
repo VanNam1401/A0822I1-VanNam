@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6c4e9067-7321-4e72-9331-7040135281fc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../AJAX/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AJAX/.idea/AJAX.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AJAX/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AJAX/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AJAX/create_student.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AJAX/list_student.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo/.idea/demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo/demo_module4_spring_boot/src/main/java/com/example/demo_module4_spring_boot/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo/demo_module4_spring_boot/src/main/java/com/example/demo_module4_spring_boot/model/AppUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo/demo_module4_spring_boot/src/main/java/com/example/demo_module4_spring_boot/repository/IAppUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo/demo_module4_spring_boot/src/main/java/com/example/demo_module4_spring_boot/service/impl/UserDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo/demo_ss12_jquery_ajax/ajax/.idea/ajax.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone/src/main/java/com/example/prac_ss12_phone/HelloServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone_management/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone_management/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone_management/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone_management/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone_management/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone_management/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone_management/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone_management/src/main/java/com/example/prac_ss12_phone_management/PracSs12PhoneManagementApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone_management/src/main/java/com/example/prac_ss12_phone_management/configuration/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone_management/src/main/java/com/example/prac_ss12_phone_management/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone_management/src/main/java/com/example/prac_ss12_phone_management/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone_management/src/main/java/com/example/prac_ss12_phone_management/controller/SmartphoneController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone_management/src/main/java/com/example/prac_ss12_phone_management/model/Smartphone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone_management/src/main/java/com/example/prac_ss12_phone_management/repository/ISmartphoneRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone_management/src/main/java/com/example/prac_ss12_phone_management/service/ISmartphoneService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone_management/src/main/java/com/example/prac_ss12_phone_management/service/impl/SmartphoneServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone_management/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone_management/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone_management/src/main/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_phone_management/src/test/java/com/example/prac_ss12_phone_management/PracSs12PhoneManagementApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_tao_hieu_ung_jquery/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_tao_hieu_ung_jquery/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_tao_hieu_ung_jquery/.idea/prac_ss12_tao_hieu_ung_jquery.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_tao_hieu_ung_jquery/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_tao_hieu_ung_jquery/animate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prac_ss12_jquery_ajax/prac_ss12_tao_hieu_ung_jquery/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/prac_ss14_spring_security/HelloServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demo/demo_module4_spring_boot/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demo/demo_module4_spring_boot/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demo/demo_module4_spring_boot/src/main/java/com/example/demo_module4_spring_boot/controller/StudentRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demo/demo_module4_spring_boot/src/main/java/com/example/demo_module4_spring_boot/controller/StudentRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demo/demo_module4_spring_boot/src/main/java/com/example/demo_module4_spring_boot/dto/StudentCreateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demo/demo_module4_spring_boot/src/main/java/com/example/demo_module4_spring_boot/dto/StudentCreateDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demo/demo_module4_spring_boot/src/main/java/com/example/demo_module4_spring_boot/model/ClassRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demo/demo_module4_spring_boot/src/main/java/com/example/demo_module4_spring_boot/model/ClassRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demo/demo_module4_spring_boot/src/main/java/com/example/demo_module4_spring_boot/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demo/demo_module4_spring_boot/src/main/java/com/example/demo_module4_spring_boot/model/Student.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="2QTEC5EYjuL5CcE0DieYE80r6ha" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "AtomSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.73" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.73" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment>
+        <artifact name="Gradle : com.example : prac_ss14_spring_security-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/Gradle___com_example___prac_ss14_spring_security_1_0_SNAPSHOT_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com.example : prac_ss14_spring_security-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6c4e9067-7321-4e72-9331-7040135281fc" name="Changes" comment="" />
+      <created>1685369043201</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685369043201</updated>
+      <workItem from="1685369044569" duration="1452000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
